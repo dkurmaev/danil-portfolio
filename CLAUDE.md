@@ -16,14 +16,14 @@
 
 ## 2. Стек
 
-| Слой | Технология |
-| --- | --- |
-| Фреймворк | Next.js 16 (App Router) |
-| i18n | next-intl 4 |
-| Стили | Tailwind v4 (без `tailwind.config.ts`) |
-| Анимации | `motion` (бывший `framer-motion`) |
-| Иконки | `lucide-react` |
-| Формы | `react-hook-form` + `zod` |
+| Слой           | Технология                               |
+| -------------- | ---------------------------------------- |
+| Фреймворк      | Next.js 16 (App Router)                  |
+| i18n           | next-intl 4                              |
+| Стили          | Tailwind v4 (без `tailwind.config.ts`)   |
+| Анимации       | `motion` (бывший `framer-motion`)        |
+| Иконки         | `lucide-react`                           |
+| Формы          | `react-hook-form` + `zod`                |
 | Форматирование | Prettier + `prettier-plugin-tailwindcss` |
 
 **Окружение:** Windows, PowerShell, VS Code.
