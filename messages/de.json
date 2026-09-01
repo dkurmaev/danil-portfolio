@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "title": "Danil Kurmayev",
+    "subtitle": "Fullstack Entwickler"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache",
+    "de": "Deutsch",
+    "en": "Englisch",
+    "ru": "Russisch"
+  }
+}
