@@ -1,4 +1,8 @@
 {
+  "Metadata": {
+    "title": "Данил Курмаев — Fullstack разработчик | React, Next.js, NestJS",
+    "description": "Данил Курмаев — Fullstack / Product разработчик из Берлина. Проектирую и разрабатываю современные веб-приложения, API и цифровые продукты — от идеи и архитектуры до deployment."
+  },
   "LocaleSwitcher": {
     "label": "Язык",
     "de": "Немецкий",

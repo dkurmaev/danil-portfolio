@@ -1,4 +1,8 @@
 {
+  "Metadata": {
+    "title": "Danil Kurmayev — Fullstack Entwickler | React, Next.js, NestJS",
+    "description": "Danil Kurmayev ist Fullstack- / Product Developer in Berlin. Ich entwickle moderne Webanwendungen, APIs und digitale Produkte – von der Idee und Architektur bis zum Deployment."
+  },
   "LocaleSwitcher": {
     "label": "Sprache",
     "de": "Deutsch",
