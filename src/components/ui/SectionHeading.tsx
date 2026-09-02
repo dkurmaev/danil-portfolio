@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 
+import { cn } from '@/lib/cn';
+
 interface SectionHeadingProps {
   eyebrow?: string;
   title: ReactNode;
@@ -14,9 +16,7 @@ export function SectionHeading({
   className,
 }: SectionHeadingProps) {
   return (
-    <div
-      className={['flex flex-col gap-4', className].filter(Boolean).join(' ')}
-    >
+    <div className={cn('flex flex-col gap-4', className)}>
       {eyebrow && (
         <p className="text-fg-muted font-mono text-xs tracking-[0.2em] uppercase">
           {eyebrow}

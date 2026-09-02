@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 
+import { cn } from '@/lib/cn';
+
 interface ContainerProps {
   children: ReactNode;
   className?: string;
@@ -8,12 +10,10 @@ interface ContainerProps {
 export function Container({ children, className }: ContainerProps) {
   return (
     <div
-      className={[
+      className={cn(
         'mx-auto w-full max-w-[1320px] px-5 md:px-8 lg:px-12',
         className,
-      ]
-        .filter(Boolean)
-        .join(' ')}
+      )}
     >
       {children}
     </div>

@@ -70,6 +70,30 @@
       "services": "Services & APIs"
     }
   },
+  "Projects": {
+    "eyebrow": "Work",
+    "title": "Featured Projects",
+    "description": "A selection of products and client projects I designed and built end to end.",
+    "cta": "View project",
+    "categories": {
+      "saas": "SaaS / Developer Platform",
+      "edtech": "EdTech / Telegram Bot / AI",
+      "commercial-website": "Commercial Website",
+      "brand": "Brand / Commercial Web Experience"
+    },
+    "statuses": {
+      "production": "Production",
+      "active-development": "Active Development",
+      "commercial": "Commercial",
+      "concept": "Concept"
+    },
+    "descriptions": {
+      "dev2lab": "A developer and client platform for matching, jobs, offers and IT collaboration — built end to end as a personal SaaS product.",
+      "italiano-daily": "A Telegram bot for daily Italian practice with lessons, quizzes, streaks and AI-powered fallback.",
+      "olidort-bedachungen": "A conversion-focused commercial website with a service calculator, analytics tracking and SEO, built for a real client.",
+      "space-burger": "A visually driven brand website with custom animations and a fully responsive frontend build."
+    }
+  },
   "Footer": {
     "location": "Berlin, Germany",
     "legalImpressum": "Impressum",

@@ -73,6 +73,30 @@
       "services": "Services & APIs"
     }
   },
+  "Projects": {
+    "eyebrow": "Projekte",
+    "title": "Ausgewählte Projekte",
+    "description": "Eine Auswahl an eigenen Produkten und Kundenprojekten, die ich vollständig konzipiert und entwickelt habe.",
+    "cta": "Projekt ansehen",
+    "categories": {
+      "saas": "SaaS / Entwickler-Plattform",
+      "edtech": "EdTech / Telegram-Bot / KI",
+      "commercial-website": "Unternehmenswebsite",
+      "brand": "Marken- / Commercial-Web-Experience"
+    },
+    "statuses": {
+      "production": "Production",
+      "active-development": "In aktiver Entwicklung",
+      "commercial": "Commercial",
+      "concept": "Konzept"
+    },
+    "descriptions": {
+      "dev2lab": "Eine Plattform für Entwickler und Auftraggeber – von Matching und Jobs bis zu Angeboten – als eigenständiges SaaS-Produkt entwickelt.",
+      "italiano-daily": "Ein Telegram-Bot für tägliches Italienisch-Training mit Lektionen, Quiz, Streaks und KI-gestütztem Fallback.",
+      "olidort-bedachungen": "Eine konversionsorientierte Unternehmenswebsite mit Leistungsrechner, Analytics-Tracking und SEO für einen realen Kunden.",
+      "space-burger": "Eine visuell starke Markenwebsite mit eigenen Animationen und vollständig responsivem Frontend."
+    }
+  },
   "Footer": {
     "location": "Berlin, Deutschland",
     "legalImpressum": "Impressum",

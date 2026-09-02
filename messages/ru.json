@@ -70,6 +70,30 @@
       "services": "Сервисы и API"
     }
   },
+  "Projects": {
+    "eyebrow": "Проекты",
+    "title": "Избранные проекты",
+    "description": "Подборка собственных продуктов и клиентских проектов, которые я спроектировал и разработал целиком.",
+    "cta": "Смотреть проект",
+    "categories": {
+      "saas": "SaaS / платформа для разработчиков",
+      "edtech": "EdTech / Telegram-бот / AI",
+      "commercial-website": "Коммерческий сайт",
+      "brand": "Бренд / Commercial Web Experience"
+    },
+    "statuses": {
+      "production": "Production",
+      "active-development": "В активной разработке",
+      "commercial": "Commercial",
+      "concept": "Концепт"
+    },
+    "descriptions": {
+      "dev2lab": "Платформа для разработчиков и заказчиков — matching, задачи, офферы — реализована как самостоятельный SaaS-продукт.",
+      "italiano-daily": "Telegram-бот для ежедневной практики итальянского: уроки, квизы, streak и AI fallback.",
+      "olidort-bedachungen": "Конверсионный коммерческий сайт с калькулятором услуг, аналитикой и SEO для реального клиента.",
+      "space-burger": "Визуально сильный брендовый сайт с анимациями и полностью адаптивной frontend-реализацией."
+    }
+  },
   "Footer": {
     "location": "Берлин, Германия",
     "legalImpressum": "Impressum",

@@ -4,6 +4,8 @@ import type {
   ReactNode,
 } from 'react';
 
+import { cn } from '@/lib/cn';
+
 type Variant = 'primary' | 'secondary' | 'ghost';
 
 const baseStyles =
@@ -38,9 +40,7 @@ export function Button({
   className,
   ...props
 }: ButtonProps) {
-  const classes = [baseStyles, variantStyles[variant], className]
-    .filter(Boolean)
-    .join(' ');
+  const classes = cn(baseStyles, variantStyles[variant], className);
 
   if ('href' in props && typeof props.href === 'string') {
     const { href, ...anchorProps } = props;
