@@ -1,12 +1,28 @@
-import { getTranslations } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 
-export default async function Home() {
-  const t = await getTranslations('HomePage');
+import { Footer } from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
+import { Hero } from '@/components/sections/Hero';
+
+interface HomeProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function Home({ params }: HomeProps) {
+  const { locale } = await params;
+
+  // Locale validity is already enforced by the layout above; this call only
+  // primes next-intl's per-request cache so this segment can be prerendered
+  // statically instead of opting into `headers()`-based dynamic rendering.
+  setRequestLocale(locale);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-2">
-      <h1 className="text-2xl font-semibold">{t('title')}</h1>
-      <p className="text-sm opacity-70">{t('subtitle')}</p>
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+      </main>
+      <Footer />
+    </>
   );
 }

@@ -1,12 +1,49 @@
 {
-  "HomePage": {
-    "title": "Danil Kurmayev",
-    "subtitle": "Fullstack Developer"
-  },
   "LocaleSwitcher": {
     "label": "Language",
     "de": "German",
     "en": "English",
     "ru": "Russian"
+  },
+  "Nav": {
+    "about": "About",
+    "projects": "Projects",
+    "stack": "Stack",
+    "experience": "Experience",
+    "services": "Services",
+    "contact": "Contact",
+    "calculator": "Calculator",
+    "letsTalk": "Let's Talk",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "ariaLabel": "Main navigation"
+  },
+  "Header": {
+    "brandName": "Danil Kurmayev",
+    "brandRole": "Fullstack Developer"
+  },
+  "Social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "Hero": {
+    "eyebrow": "Fullstack / Product Developer",
+    "titleLine1": "Danil",
+    "titleLine2": "Kurmayev",
+    "subtitle": "Fullstack Developer",
+    "description": "I design and build modern web applications, APIs and digital products — from idea and architecture to deployment.",
+    "stack": ["React", "TypeScript", "NestJS", "PostgreSQL", "React Native"],
+    "ctaPrimary": "View Projects",
+    "ctaSecondary": "Contact Me",
+    "ctaTertiary": "Calculate Project Cost",
+    "availabilityAvailable": "Available for selected projects"
+  },
+  "Footer": {
+    "location": "Berlin, Germany",
+    "legalImpressum": "Impressum",
+    "legalDatenschutz": "Privacy Policy",
+    "copyright": "© {year} Danil Kurmayev",
+    "navAriaLabel": "Footer navigation"
   }
 }

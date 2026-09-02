@@ -1,12 +1,49 @@
 {
-  "HomePage": {
-    "title": "Данил Курмаев",
-    "subtitle": "Fullstack разработчик"
-  },
   "LocaleSwitcher": {
     "label": "Язык",
     "de": "Немецкий",
     "en": "Английский",
     "ru": "Русский"
+  },
+  "Nav": {
+    "about": "Обо мне",
+    "projects": "Проекты",
+    "stack": "Стек",
+    "experience": "Опыт",
+    "services": "Услуги",
+    "contact": "Контакты",
+    "calculator": "Калькулятор",
+    "letsTalk": "Поговорим",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "ariaLabel": "Основная навигация"
+  },
+  "Header": {
+    "brandName": "Данил Курмаев",
+    "brandRole": "Fullstack-разработчик"
+  },
+  "Social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "Hero": {
+    "eyebrow": "Fullstack / Product Developer",
+    "titleLine1": "Данил",
+    "titleLine2": "Курмаев",
+    "subtitle": "Fullstack-разработчик",
+    "description": "Проектирую и разрабатываю современные веб-приложения, API и цифровые продукты — от идеи и архитектуры до deployment.",
+    "stack": ["React", "TypeScript", "NestJS", "PostgreSQL", "React Native"],
+    "ctaPrimary": "Смотреть проекты",
+    "ctaSecondary": "Связаться со мной",
+    "ctaTertiary": "Рассчитать стоимость проекта",
+    "availabilityAvailable": "Открыт для интересных проектов"
+  },
+  "Footer": {
+    "location": "Берлин, Германия",
+    "legalImpressum": "Impressum",
+    "legalDatenschutz": "Политика конфиденциальности",
+    "copyright": "© {year} Данил Курмаев",
+    "navAriaLabel": "Навигация в подвале"
   }
 }

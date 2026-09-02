@@ -23,6 +23,15 @@
   /* Status */
   --color-success: #22c55e;
   --color-error: #ef4444;
+
+  /* Typography */
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Radius */
+  --radius-chip: 9px;
+  --radius-button: 12px;
+  --radius-card: 20px;
 }
 
 html {
@@ -34,4 +43,5 @@ body {
   margin: 0;
   background-color: var(--color-bg);
   color: var(--color-fg);
+  font-family: var(--font-sans);
 }
