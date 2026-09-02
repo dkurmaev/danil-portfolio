@@ -107,17 +107,18 @@
 - **Блок B** — Header, MobileMenu, Footer, Hero. UI-примитивы `Button`, `Badge`, `Container`, `SocialLinks`, `LanguageSwitcher`. Конфиги `config/site.ts`, `config/social.ts`.
 - **Блок C** — About (текст + info cards: Location / Role / Focus / Languages), Tech Stack (6 категорий: Frontend, Mobile, Backend, Database, Infrastructure, Services/APIs, без progress bars). Данные стека — `data/technologies.ts` + `src/types/technologies.ts` (парный тип). Добавлен алиас `@data/*` → `./data/*` в `tsconfig.json`, так как `data/` лежит в корне проекта, а не в `src/`. Новые reusable UI-примитивы: `SectionHeading`, `Card`. Обе секции навешены на якоря `#about` / `#stack` со `scroll-mt-20`.
 - **Рефакторинг:** `src/lib/cn.ts` — общий хелпер merge классов, вынесен из `Card`/`SectionHeading`/`Button`/`Container`/`Badge` (по итогам `/code-review` после Блока C).
-- **Блок D** — Featured Projects: 4 проекта (Dev2Lab, Italiano Daily, Olidort Bedachungen, Space Burger) в `data/projects.ts` + `src/types/projects.ts` (парный тип). `name` и `stack` — не переводятся (лежат в data), переводятся category/status/description через labelKey-паттерн (`Projects.categories.*`, `Projects.statuses.*`, `Projects.descriptions.<slug>`). `ProjectCard` — CSS/SVG-плейсхолдер обложки (композиция как в Hero visual, `cover` зарезервирован под будущий next/image), hover: border-accent + shadow-glow + подъём. CTA "View project" — визуальная заглушка без перехода. Секция `Projects` — id="projects", grid 1/2 колонки.
+- **Блок D** — Featured Projects: 4 проекта (Dev2Lab, Italiano Daily, Olidort Bedachungen, Space Burger) в `data/projects.ts` + `src/types/projects.ts` (парный тип). `name` и `stack` — не переводятся (лежат в data), переводятся category/status/description через labelKey-паттерн (`Projects.categories.*`, `Projects.statuses.*`, `Projects.descriptions.<slug>`). `ProjectCard` — CSS/SVG-плейсхолдер обложки, CTA "View project" — визуальная заглушка без перехода. Секция `Projects` — id="projects", grid 1/2 колонки.
+- **Рефакторинг:** `src/components/ui/CoverPlaceholder.tsx` — общий CSS/SVG-плейсхолдер (блобы + grid + label), вынесен из `Hero` и `ProjectCard` (по итогам `/code-review` после Блока D). Там же убран hover на `ProjectCard`, обещавший переход (подъём + glow-тень + zoom обложки), пока карточка никуда не ведёт — оставлен только hover на бордере.
+- **Блок E** — Experience (timeline, `data/experiences.ts` + `src/types/experiences.ts`, 3 записи: freelance/fullstack-development/it-background, только `id`+`current` в data, весь текст — period/title/description — через labelKey), Education & Certifications (2 карточки + кнопка "View certificates" как честный `disabled`-стаб, без модалки/страницы — они позже), Services (`data/services.ts` + `src/types/services.ts`, все 7 карточек по ТЗ §41, без цен и цифр), Contact (заголовок, описание, рабочая mailto-кнопка + SocialLinks, без формы — она отдельным блоком с backend). Секции `#experience` / `#services` / `#contact` — `scroll-mt-20`.
 
 Всё проверено: `format` / `lint` / `typecheck` / `build` — чисто. Смоук-тест пройден: `/` → 307 → `/de`, все три локали рендерятся, неизвестная локаль даёт 404.
 
 **Сейчас в работе:**
 
-- **Блок E** — Experience, Education, Services, Contact.
+- **Блок F** — SEO: метаданные по локалям, sitemap, robots.txt, canonical, hreflang, OpenGraph, JSON-LD.
 
 **Дальше по плану:**
 
-- **Блок F** — SEO: метаданные по локалям, sitemap, robots.txt, canonical, hreflang, OpenGraph, JSON-LD.
 - **Блок G** (после MVP) — страница `/checkliste`: форма, серверный расчёт по каталогу, отправка письма. Требует API route, поэтому вне MVP — основное ТЗ фиксирует MVP как версию без backend.
 
 **В планах:**

@@ -97,6 +97,83 @@
       "space-burger": "Eine visuell starke Markenwebsite mit eigenen Animationen und vollständig responsivem Frontend."
     }
   },
+  "Experience": {
+    "eyebrow": "Werdegang",
+    "title": "Werdegang",
+    "items": {
+      "freelance": {
+        "period": "2024 – heute",
+        "title": "Freelance Fullstack-Entwickler",
+        "description": "Entwicklung eigener Produkte und kommerzieller Projekte für Kunden als unabhängiger Fullstack-Entwickler."
+      },
+      "fullstack-development": {
+        "period": "2023 – 2024",
+        "title": "Professionelle Fullstack-Ausbildung",
+        "description": "Praxisorientierte Ausbildung in modernem Frontend- und Backend-Development, Architektur und Projektarbeit."
+      },
+      "it-background": {
+        "period": "Davor",
+        "title": "Technischer / IT-Hintergrund",
+        "description": "Früherer technischer Werdegang, der die ingenieurwissenschaftliche Grundlage für die spätere Entwicklungsarbeit gelegt hat."
+      }
+    }
+  },
+  "Education": {
+    "eyebrow": "Ausbildung",
+    "title": "Ausbildung & Zertifikate",
+    "cta": "Zertifikate ansehen",
+    "items": {
+      "engineering": {
+        "title": "Ingenieurwissenschaftliche Ausbildung",
+        "description": "Akademische Grundlage in Ingenieurwissenschaften als technisches Fundament für die Softwareentwicklung."
+      },
+      "fullstack": {
+        "title": "Fullstack Development",
+        "description": "Professionelle Qualifikation in Fullstack-Entwicklung mit Fokus auf modernen Frontend- und Backend-Technologien."
+      }
+    }
+  },
+  "Services": {
+    "eyebrow": "Leistungen",
+    "title": "Leistungen",
+    "description": "Was Sie bei mir beauftragen können — von einzelnen Features bis zum kompletten Produkt.",
+    "items": {
+      "web-applications": {
+        "title": "Web Applications",
+        "description": "Moderne React- / Next.js-Anwendungen."
+      },
+      "fullstack-development": {
+        "title": "Fullstack Development",
+        "description": "Frontend, Backend und Datenbank aus einer Hand."
+      },
+      "backend-api": {
+        "title": "Backend & API",
+        "description": "NestJS- / Node.js-APIs und Services."
+      },
+      "saas-mvp": {
+        "title": "SaaS / MVP",
+        "description": "Aufbau von MVPs und SaaS-Produkten."
+      },
+      "automation": {
+        "title": "Automation",
+        "description": "Bots, Integrationen und Workflows."
+      },
+      "ai-integrations": {
+        "title": "KI-Integrationen",
+        "description": "OpenAI und weitere KI-Integrationen."
+      },
+      "existing-projects": {
+        "title": "Bestehende Projekte",
+        "description": "Weiterentwicklung bestehender Projekte."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Kontakt",
+    "title": "Lassen Sie uns etwas Sinnvolles entwickeln.",
+    "description": "Erzählen Sie mir kurz von Ihrem Projekt — ich melde mich zeitnah zurück.",
+    "cta": "E-Mail schreiben"
+  },
   "Footer": {
     "location": "Berlin, Deutschland",
     "legalImpressum": "Impressum",

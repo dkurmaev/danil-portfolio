@@ -94,6 +94,83 @@
       "space-burger": "Визуально сильный брендовый сайт с анимациями и полностью адаптивной frontend-реализацией."
     }
   },
+  "Experience": {
+    "eyebrow": "Опыт",
+    "title": "Опыт",
+    "items": {
+      "freelance": {
+        "period": "2024 — по настоящее время",
+        "title": "Freelance fullstack-разработчик",
+        "description": "Разработка собственных продуктов и коммерческих проектов для клиентов в качестве независимого fullstack-разработчика."
+      },
+      "fullstack-development": {
+        "period": "2023–2024",
+        "title": "Профессиональное обучение fullstack-разработке",
+        "description": "Практическое обучение современной frontend- и backend-разработке, архитектуре и проектной работе."
+      },
+      "it-background": {
+        "period": "Ранее",
+        "title": "Технический / IT-бэкграунд",
+        "description": "Более ранний технический опыт, заложивший инженерную базу для дальнейшей разработки."
+      }
+    }
+  },
+  "Education": {
+    "eyebrow": "Образование",
+    "title": "Образование и сертификаты",
+    "cta": "Смотреть сертификаты",
+    "items": {
+      "engineering": {
+        "title": "Инженерное образование",
+        "description": "Академическая инженерная подготовка как техническая база для разработки программного обеспечения."
+      },
+      "fullstack": {
+        "title": "Fullstack Development",
+        "description": "Профессиональная квалификация в области fullstack-разработки с фокусом на современных frontend- и backend-технологиях."
+      }
+    }
+  },
+  "Services": {
+    "eyebrow": "Услуги",
+    "title": "Услуги",
+    "description": "Что можно заказать — от отдельных фич до готового продукта.",
+    "items": {
+      "web-applications": {
+        "title": "Веб-приложения",
+        "description": "Современные приложения на React / Next.js."
+      },
+      "fullstack-development": {
+        "title": "Fullstack-разработка",
+        "description": "Frontend, backend и база данных — от начала до конца."
+      },
+      "backend-api": {
+        "title": "Backend и API",
+        "description": "API и сервисы на NestJS / Node.js."
+      },
+      "saas-mvp": {
+        "title": "SaaS / MVP",
+        "description": "Разработка MVP и SaaS-продуктов."
+      },
+      "automation": {
+        "title": "Автоматизация",
+        "description": "Боты, интеграции и рабочие процессы."
+      },
+      "ai-integrations": {
+        "title": "AI-интеграции",
+        "description": "OpenAI и другие AI-интеграции."
+      },
+      "existing-projects": {
+        "title": "Доработка существующих проектов",
+        "description": "Развитие и доработка уже существующих проектов."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Контакты",
+    "title": "Давайте создадим что-нибудь полезное.",
+    "description": "Коротко расскажите о своём проекте — я отвечу в ближайшее время.",
+    "cta": "Написать письмо"
+  },
   "Footer": {
     "location": "Берлин, Германия",
     "legalImpressum": "Impressum",

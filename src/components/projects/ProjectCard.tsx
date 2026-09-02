@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import { Card } from '@/components/ui/Card';
+import { CoverPlaceholder } from '@/components/ui/CoverPlaceholder';
 import { cn } from '@/lib/cn';
 import type { Project, ProjectStatus } from '@/types/projects';
 
@@ -29,34 +30,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const t = useTranslations('Projects');
 
   return (
-    <Card
-      className={cn(
-        'group flex flex-col overflow-hidden transition-all duration-300',
-        'hover:border-accent/60 hover:shadow-accent/20 hover:-translate-y-1 hover:shadow-lg',
-      )}
-    >
-      {/* Cover placeholder — keeps the future next/image aspect-ratio; `project.cover`
-          stays unused until real project covers replace this composition. */}
-      <div
-        aria-hidden="true"
-        className="bg-bg-elevated relative aspect-[16/10] w-full overflow-hidden"
-      >
-        <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-[1.03]">
-          <div className="bg-accent/25 absolute -top-8 -left-8 h-40 w-40 rounded-full blur-3xl" />
-          <div className="bg-accent-secondary/20 absolute -right-10 -bottom-10 h-48 w-48 rounded-full blur-3xl" />
-          <div
-            className="absolute inset-0 opacity-[0.08]"
-            style={{
-              backgroundImage:
-                'linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px)',
-              backgroundSize: '28px 28px',
-            }}
-          />
-          <span className="text-fg/10 absolute bottom-4 left-1/2 -translate-x-1/2 font-mono text-5xl font-semibold tracking-tight">
-            {getInitials(project.name)}
-          </span>
-        </div>
-      </div>
+    <Card className="hover:border-accent/40 flex flex-col overflow-hidden transition-colors duration-300">
+      {/* `project.cover` stays unused until real covers replace this placeholder —
+          CoverPlaceholder keeps the aspect-ratio next/image will use later. */}
+      <CoverPlaceholder
+        label={getInitials(project.name)}
+        className="bg-bg-elevated aspect-[16/10]"
+        labelClassName="text-5xl"
+      />
 
       <div className="flex flex-1 flex-col gap-4 p-6">
         <div className="flex flex-col gap-1">

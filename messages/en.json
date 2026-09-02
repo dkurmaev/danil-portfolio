@@ -94,6 +94,83 @@
       "space-burger": "A visually driven brand website with custom animations and a fully responsive frontend build."
     }
   },
+  "Experience": {
+    "eyebrow": "Experience",
+    "title": "Experience",
+    "items": {
+      "freelance": {
+        "period": "2024 — Present",
+        "title": "Freelance Fullstack Developer",
+        "description": "Building own products and commercial client projects as an independent fullstack developer."
+      },
+      "fullstack-development": {
+        "period": "2023 – 2024",
+        "title": "Professional Fullstack Development",
+        "description": "Hands-on training in modern frontend and backend development, architecture and project work."
+      },
+      "it-background": {
+        "period": "Earlier",
+        "title": "Technical / IT Background",
+        "description": "Earlier technical experience that laid the engineering foundation for later development work."
+      }
+    }
+  },
+  "Education": {
+    "eyebrow": "Education",
+    "title": "Education & Certifications",
+    "cta": "View certificates",
+    "items": {
+      "engineering": {
+        "title": "Engineering Education",
+        "description": "An academic engineering background providing the technical foundation for software development."
+      },
+      "fullstack": {
+        "title": "Fullstack Development",
+        "description": "A professional qualification in Fullstack development, focused on modern frontend and backend technologies."
+      }
+    }
+  },
+  "Services": {
+    "eyebrow": "Services",
+    "title": "Services",
+    "description": "What you can hire me for — from individual features to a complete product.",
+    "items": {
+      "web-applications": {
+        "title": "Web Applications",
+        "description": "Modern React / Next.js applications."
+      },
+      "fullstack-development": {
+        "title": "Fullstack Development",
+        "description": "Frontend, backend and database, end to end."
+      },
+      "backend-api": {
+        "title": "Backend & API",
+        "description": "NestJS / Node.js APIs and services."
+      },
+      "saas-mvp": {
+        "title": "SaaS / MVP",
+        "description": "Building MVPs and SaaS products."
+      },
+      "automation": {
+        "title": "Automation",
+        "description": "Bots, integrations and workflows."
+      },
+      "ai-integrations": {
+        "title": "AI Integrations",
+        "description": "OpenAI and other AI integrations."
+      },
+      "existing-projects": {
+        "title": "Existing Project Development",
+        "description": "Extending and improving existing projects."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something useful.",
+    "description": "Tell me briefly about your project — I'll get back to you shortly.",
+    "cta": "Write an email"
+  },
   "Footer": {
     "location": "Berlin, Germany",
     "legalImpressum": "Impressum",
