@@ -104,17 +104,17 @@
 - **STEP 01** — инициализация проекта, зависимости, конфиг Prettier, проверка билд-пайплайна.
 - **STEP 02** — инфраструктура i18n: `next.config.ts`, `src/i18n/routing.ts`, `src/i18n/navigation.ts`, `src/i18n/request.ts`, `messages/{de,en,ru}.json`.
 - **STEP 03** — миграция на `[locale]`-роутинг: `src/app/[locale]/layout.tsx` (generateStaticParams, валидация локали, setRequestLocale, NextIntlClientProvider), `src/app/[locale]/page.tsx`, `src/proxy.ts`. Корневые `app/layout.tsx` и `app/page.tsx` удалены. Дизайн-токены заведены в `globals.css` через Tailwind v4 `@theme`.
+- **Блок B** — Header, MobileMenu, Footer, Hero. UI-примитивы `Button`, `Badge`, `Container`, `SocialLinks`, `LanguageSwitcher`. Конфиги `config/site.ts`, `config/social.ts`.
+- **Блок C** — About (текст + info cards: Location / Role / Focus / Languages), Tech Stack (6 категорий: Frontend, Mobile, Backend, Database, Infrastructure, Services/APIs, без progress bars). Данные стека — `data/technologies.ts` + `src/types/technologies.ts` (парный тип). Добавлен алиас `@data/*` → `./data/*` в `tsconfig.json`, так как `data/` лежит в корне проекта, а не в `src/`. Новые reusable UI-примитивы: `SectionHeading`, `Card`. Обе секции навешены на якоря `#about` / `#stack` со `scroll-mt-20`.
 
 Всё проверено: `format` / `lint` / `typecheck` / `build` — чисто. Смоук-тест пройден: `/` → 307 → `/de`, все три локали рендерятся, неизвестная локаль даёт 404.
 
 **Сейчас в работе:**
 
-- **Блок B** — Header, MobileMenu, Footer, Hero.
+- **Блок D** — Projects: data-слой, карточки, секция.
 
 **Дальше по плану:**
 
-- **Блок C** — About, Tech Stack.
-- **Блок D** — Projects: data-слой, карточки, секция.
 - **Блок E** — Experience, Education, Services, Contact.
 - **Блок F** — SEO: метаданные по локалям, sitemap, robots.txt, canonical, hreflang, OpenGraph, JSON-LD.
 - **Блок G** (после MVP) — страница `/checkliste`: форма, серверный расчёт по каталогу, отправка письма. Требует API route, поэтому вне MVP — основное ТЗ фиксирует MVP как версию без backend.

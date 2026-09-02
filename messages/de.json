@@ -13,7 +13,7 @@
     "services": "Leistungen",
     "contact": "Kontakt",
     "calculator": "Kalkulator",
-    "letsTalk": "Sprechen wir",
+    "letsTalk": "Kontakt aufnehmen",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen",
     "ariaLabel": "Hauptnavigation"
@@ -38,6 +38,40 @@
     "ctaSecondary": "Kontakt aufnehmen",
     "ctaTertiary": "Projektkosten berechnen",
     "availabilityAvailable": "Verfügbar für ausgewählte Projekte"
+  },
+  "About": {
+    "eyebrow": "Über mich",
+    "title": "Über mich",
+    "paragraphs": [
+      "Ich bin Fullstack- und Product Developer mit technischem Hintergrund und einer ingenieurwissenschaftlichen Ausbildung, ergänzt durch eine professionelle Qualifikation in der Fullstack-Entwicklung.",
+      "Ich arbeite an eigenen Produkten und an kommerziellen Projekten für Kunden – von der ersten Idee über die Architektur bis zum laufenden Betrieb in Produktion.",
+      "Ich lebe und arbeite in Berlin und entwickle mit modernen Technologien für Web, Automatisierung und KI-Integrationen."
+    ],
+    "cards": {
+      "location": { "label": "Standort", "value": "Berlin, Deutschland" },
+      "role": { "label": "Rolle", "value": "Fullstack / Product Developer" },
+      "focus": {
+        "label": "Fokus",
+        "value": "Web · SaaS · Automatisierung · KI"
+      },
+      "languages": {
+        "label": "Sprachen",
+        "value": "Deutsch · Englisch · Russisch"
+      }
+    }
+  },
+  "TechStack": {
+    "eyebrow": "Technologie",
+    "title": "Tech Stack",
+    "description": "Technologien, mit denen ich Software entwerfe, entwickle und in Produktion bringe.",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "database": "Datenbanken",
+      "infrastructure": "Infrastruktur",
+      "services": "Services & APIs"
+    }
   },
   "Footer": {
     "location": "Berlin, Deutschland",

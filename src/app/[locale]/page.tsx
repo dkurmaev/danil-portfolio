@@ -2,7 +2,9 @@ import { setRequestLocale } from 'next-intl/server';
 
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
+import { About } from '@/components/sections/About';
 import { Hero } from '@/components/sections/Hero';
+import { TechStack } from '@/components/sections/TechStack';
 
 interface HomeProps {
   params: Promise<{ locale: string }>;
@@ -21,6 +23,8 @@ export default async function Home({ params }: HomeProps) {
       <Header />
       <main>
         <Hero />
+        <About />
+        <TechStack />
       </main>
       <Footer />
     </>

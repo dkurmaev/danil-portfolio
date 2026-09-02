@@ -39,6 +39,37 @@
     "ctaTertiary": "Calculate Project Cost",
     "availabilityAvailable": "Available for selected projects"
   },
+  "About": {
+    "eyebrow": "About",
+    "title": "About Me",
+    "paragraphs": [
+      "I'm a Fullstack / Product Developer with a technical background and an engineering education, complemented by a professional qualification in Fullstack development.",
+      "I work on my own products as well as commercial projects for clients — from the initial idea and architecture through to running them in production.",
+      "I'm based in Berlin and build with modern technologies across web, automation and AI integrations."
+    ],
+    "cards": {
+      "location": { "label": "Location", "value": "Berlin, Germany" },
+      "role": { "label": "Role", "value": "Fullstack / Product Developer" },
+      "focus": { "label": "Focus", "value": "Web · SaaS · Automation · AI" },
+      "languages": {
+        "label": "Languages",
+        "value": "German · English · Russian"
+      }
+    }
+  },
+  "TechStack": {
+    "eyebrow": "Technology",
+    "title": "Tech Stack",
+    "description": "Technologies I use to design, build and ship production software.",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "database": "Database",
+      "infrastructure": "Infrastructure",
+      "services": "Services & APIs"
+    }
+  },
   "Footer": {
     "location": "Berlin, Germany",
     "legalImpressum": "Impressum",
