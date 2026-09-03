@@ -13,9 +13,9 @@ const baseStyles =
 
 const variantStyles: Record<Variant, string> = {
   primary:
-    'bg-accent text-fg hover:bg-accent-secondary active:bg-accent-secondary',
+    'bg-accent text-fg-inverse hover:bg-accent-secondary active:bg-accent-secondary',
   secondary:
-    'border border-border bg-transparent text-fg hover:border-accent/60 hover:bg-bg-card active:bg-bg-elevated',
+    'border border-border bg-bg-card text-fg hover:border-accent/60 hover:bg-bg-elevated active:bg-bg-elevated',
   ghost:
     'border border-border/50 bg-transparent text-fg-secondary hover:border-border hover:bg-bg-card hover:text-fg active:bg-bg-elevated',
 };

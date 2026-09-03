@@ -33,14 +33,15 @@
   },
   "Hero": {
     "eyebrow": "Fullstack / Product Developer",
-    "titleLine1": "Danil",
-    "titleLine2": "Kurmayev",
-    "subtitle": "Fullstack Entwickler",
+    "titleLine1": "Digitale Produkte.",
+    "titleLine2": "Durchdacht und",
+    "titleLine3": "vollständig gebaut.",
     "description": "Ich entwickle moderne Webanwendungen, APIs und digitale Produkte – von der Idee und Architektur bis zum Deployment.",
-    "stack": ["React", "TypeScript", "NestJS", "PostgreSQL", "React Native"],
+    "techRow1": "React · Next.js · NestJS · PostgreSQL · React Native",
+    "techRow2": "Web Apps · APIs · SaaS · Automation · Deployment",
     "ctaPrimary": "Projekte ansehen",
     "ctaSecondary": "Kontakt aufnehmen",
-    "ctaTertiary": "Projektkosten berechnen",
+    "ctaTertiary": "Projektkosten unverbindlich berechnen",
     "availabilityAvailable": "Verfügbar für ausgewählte Projekte"
   },
   "About": {

@@ -37,7 +37,7 @@ export function Header() {
       className={[
         'sticky top-0 z-40 transition-colors duration-300',
         isScrolled
-          ? 'border-border bg-bg/80 border-b backdrop-blur-md'
+          ? 'border-border bg-bg/95 border-b backdrop-blur-md'
           : 'border-b border-transparent bg-transparent',
       ].join(' ')}
     >
