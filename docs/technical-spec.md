@@ -245,7 +245,7 @@ Next/Image.
 
 Стиль:
 
-**Dark Premium Technology**
+**Light Professional Technology**
 
 Ассоциации:
 
@@ -254,7 +254,7 @@ Next/Image.
 - SaaS;
 - architecture;
 - modern development;
-- premium technology.
+- спокойная профессиональная уверенность.
 
 Сайт не должен выглядеть:
 
@@ -262,7 +262,12 @@ Next/Image.
 - как криптовалютный landing page;
 - как шаблон ThemeForest;
 - как портфолио студента;
-- как чрезмерно неоновый Cyberpunk UI.
+- как неоновый Cyberpunk UI;
+- как рекламная посадочная страница агентства.
+
+Ключевое ощущение: взрослый разработчик, который уже
+работает, а не демонстрация фронтенд-эффектов.
+Много воздуха, спокойный контраст, точечный акцент.
 
 ---
 
@@ -270,51 +275,51 @@ Next/Image.
 
 Основной фон:
 
-```css
-#05070B
-```
+​```css
+#FAFAF8
+​```
 
-Дополнительный фон:
+Дополнительный фон / поверхности:
 
-```css
-#090D14
-```
+​```css
+#FFFFFF
+​```
 
 Фон карточек:
 
-```css
-#0D121C
-```
+​```css
+#FFFFFF
+​```
 
 Elevated surface:
 
-```css
-#111722
-```
+​```css
+#F4F4F1
+​```
 
 Основной текст:
 
-```css
-#F6F7F9
-```
+​```css
+#0A0A0A
+​```
 
 Secondary text:
 
-```css
-#9CA3AF
-```
+​```css
+rgba(10,10,10,0.60)
+​```
 
 Muted text:
 
-```css
-#6B7280
-```
+​```css
+rgba(10,10,10,0.42)
+​```
 
 Borders:
 
-```css
-rgba(255,255,255,0.08)
-```
+​```css
+rgba(10,10,10,0.08)
+​```
 
 Primary accent:
 
@@ -322,39 +327,38 @@ Primary accent:
 
 Рекомендуемый:
 
-```css
-#8B5CF6
-```
+​```css
+#6D4AFF
+​```
 
 Secondary accent:
 
-```css
-#6366F1
-```
-
-Дополнительный технологический accent:
-
-```css
-#22D3EE
-```
+​```css
+#5638E0
+​```
 
 Success:
 
-```css
-#22C55E
-```
+​```css
+#16A34A
+​```
 
 Error:
 
-```css
-#EF4444
-```
+​```css
+#DC2626
+​```
 
-Не использовать одновременно большое количество акцентных цветов.
+Акцент применяется точечно: eyebrow, primary CTA,
+активная локаль, подчёркнутые ссылки, статус-индикатор.
+Не использовать акцент как заливку крупных областей.
+
+Не использовать одновременно большое количество
+акцентных цветов.
 
 Главная композиция:
 
-**black / graphite / white / violet**
+**off-white / white / near-black / violet**
 
 ---
 
@@ -499,7 +503,7 @@ Header sticky.
 
 При scroll:
 
-- появляется dark backdrop;
+- появляется светлый непрозрачный backdrop;
 - легкий blur;
 - тонкий bottom border.
 
@@ -590,21 +594,29 @@ Eyebrow:
 FULLSTACK / PRODUCT DEVELOPER
 ```
 
-Основной H1:
+Основной H1 — утверждение о том, что делается,
+в две-три строки.
 
-```text
-Danil
-Kurmayev
-```
+Немецкий вариант:
 
-или концептуальный вариант:
+​```text
+Digitale Produkte.
+Durchdacht und
+vollständig gebaut.
+​```
 
-```text
-I BUILD
-DIGITAL PRODUCTS.
-```
+Имя в Hero не является заголовком — оно присутствует
+в header и footer. В первом viewport должно быть
+понятно, что делает владелец, а не как его зовут.
 
-Имя в любом случае должно быть хорошо видно в первом viewport.
+Технологии выводятся компактными строками с иконками,
+не отдельными чипами:
+
+​```text
+[icon] React · Next.js · NestJS · PostgreSQL · React Native
+[icon] Web Apps · APIs · SaaS · Automation · Deployment
+[●]    Verfügbar für ausgewählte Projekte
+​```
 
 Основной subtitle:
 
@@ -640,9 +652,12 @@ Contact Me
 
 Можно добавить tertiary:
 
-```text
-Calculate Project Cost
-```
+Tertiary CTA — подчёркнутая ссылка со стрелкой,
+не кнопка:
+
+​```text
+Projektkosten unverbindlich berechnen →
+​```
 
 Он должен скроллить к калькулятору.
 
@@ -695,23 +710,25 @@ availability: {
 
 # 17. Hero Visual
 
-До окончательного утверждения MVP использовать placeholder.
+Реальная фотография владельца на светлом фоне.
 
-Не вставлять случайное stock-photo.
+Требования к фотографии:
 
-Placeholder должен сохранять будущую композицию фотографии.
+- нейтральный светлый фон;
+- ровный мягкий свет;
+- спокойная поза, открытый взгляд;
+- деловой casual;
+- формат портретный, вертикальный.
 
-Пример:
+Поддержка композиции справа: лёгкая изометрическая
+техническая графика линиями, низкий контраст.
+Она не должна конкурировать с фотографией
+и не должна выглядеть как декоративный сток.
 
-- темный developer workspace;
-- silhouette / neutral profile placeholder;
-- monitors;
-- subtle violet glow;
-- coding environment.
-
-После утверждения дизайна placeholder заменяется реальной фотографией владельца.
-
-UI не должен зависеть от пропорций конкретной фотографии.
+До подключения финальной фотографии использовать
+placeholder, сохраняющий пропорции и позицию портрета.
+Замена на реальное фото не должна требовать изменения
+layout.
 
 ---
 
@@ -1069,10 +1086,11 @@ Hover:
 
 - slight transform;
 - border highlight;
-- subtle violet glow;
+- мягкая тень вместо glow;
 - image zoom до 2–4%.
 
-Не делать сильный tilt.
+Hover-эффект применяется только к карточкам,
+которые действительно кликабельны.
 
 ---
 
@@ -1927,9 +1945,9 @@ Placeholder должен сохранять:
 - small slide;
 - stagger;
 - card hover;
-- subtle glow;
+- мягкая тень при hover;
 - border animation;
-- background gradient movement.
+- сдержанное движение градиента.
 
 ---
 
@@ -2274,12 +2292,11 @@ Small chips:
 
 # 82. Shadows
 
-На dark UI использовать не тяжелые black shadows, а комбинацию:
+На светлом UI использовать мягкие короткие тени
+низкой непрозрачности в сочетании с тонкой границей.
 
-- subtle shadow;
-- border;
-- low-opacity accent glow.
-
+Не использовать тяжёлые размытые тени и подсветку
+акцентным цветом.
 ---
 
 # 83. Buttons
@@ -2298,7 +2315,9 @@ violet accent.
 
 Secondary:
 
-dark transparent + border.
+Secondary:
+
+белый фон + видимая граница.
 
 Ghost:
 
