@@ -4,16 +4,19 @@ export type ProjectStatus =
 export type ProjectCategory =
   'saas' | 'edtech' | 'commercial-website' | 'brand';
 
+export type ProjectLayout = 'featured' | 'wide' | 'compact';
+
+export type ProjectRole =
+  'fullstack-product' | 'fullstack-development' | 'frontend-development';
+
 export interface Project {
   slug: string;
   name: string;
   category: ProjectCategory;
   status: ProjectStatus;
+  role: ProjectRole;
+  layout: ProjectLayout;
   stack: string[];
-  /**
-   * Future next/image source, e.g. `/images/projects/<slug>/cover.jpg`.
-   * No real assets yet — cards render a CSS/SVG placeholder instead (see
-   * ProjectCard) and this field stays unused until real covers land.
-   */
   cover: string;
+  caseStudyHref?: string;
 }

@@ -12,11 +12,15 @@
   "Nav": {
     "about": "Über mich",
     "projects": "Projekte",
+    "expertise": "Expertise",
+    "career": "Werdegang",
     "stack": "Stack",
     "experience": "Erfahrung",
     "services": "Leistungen",
     "contact": "Kontakt",
     "calculator": "Kalkulator",
+    "projectInquiry": "Projekt anfragen",
+    "language": "Sprache",
     "letsTalk": "Kontakt aufnehmen",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen",
@@ -24,7 +28,8 @@
   },
   "Header": {
     "brandName": "Danil Kurmayev",
-    "brandRole": "Fullstack Entwickler"
+    "brandRole": "Fullstack Entwickler",
+    "homeLabel": "Zur Startseite von Danil Kurmayev"
   },
   "Social": {
     "github": "GitHub",
@@ -32,29 +37,37 @@
     "email": "E-Mail"
   },
   "Hero": {
-    "eyebrow": "Fullstack / Product Developer",
-    "titleLine1": "Digitale Produkte.",
-    "titleLine2": "Durchdacht und",
-    "titleLine3": "vollständig gebaut.",
-    "description": "Ich entwickle moderne Webanwendungen, APIs und digitale Produkte – von der Idee und Architektur bis zum Deployment.",
+    "eyebrow": "Fullstack & Product Developer",
+    "titleLine1": "Von der Idee zum funktionierenden",
+    "titleLine2": "digitalen Produkt.",
+    "description": "Ich entwickle Webanwendungen und digitale Produkte ganzheitlich – von der Architektur über Frontend, Backend und Integrationen bis zum produktiven Betrieb.",
     "techRow1": "React · Next.js · NestJS · PostgreSQL · React Native",
-    "techRow2": "Web Apps · APIs · SaaS · Automation · Deployment",
+    "techRow2": "Webanwendungen · APIs · SaaS · Automatisierung · Deployment",
     "ctaPrimary": "Projekte ansehen",
     "ctaSecondary": "Kontakt aufnehmen",
     "ctaTertiary": "Projektkosten unverbindlich berechnen",
-    "availabilityAvailable": "Verfügbar für ausgewählte Projekte"
+    "availabilityAvailable": "Verfügbar für ausgewählte Projekte",
+    "portraitAlt": "Porträt von Danil Kurmayev"
   },
   "About": {
-    "eyebrow": "Über mich",
+    "eyebrow": "About / Über mich",
     "title": "Über mich",
+    "headlineLine1": "Technisches Denken",
+    "headlineLine2": "Produkte mit Substanz",
     "paragraphs": [
       "Ich bin Fullstack- und Product Developer mit technischem Hintergrund und einer ingenieurwissenschaftlichen Ausbildung, ergänzt durch eine professionelle Qualifikation in der Fullstack-Entwicklung.",
       "Ich arbeite an eigenen Produkten und an kommerziellen Projekten für Kunden – von der ersten Idee über die Architektur bis zum laufenden Betrieb in Produktion.",
       "Ich lebe und arbeite in Berlin und entwickle mit modernen Technologien für Web, Automatisierung und KI-Integrationen."
     ],
     "cards": {
-      "location": { "label": "Standort", "value": "Berlin, Deutschland" },
-      "role": { "label": "Rolle", "value": "Fullstack / Product Developer" },
+      "location": {
+        "label": "Standort",
+        "value": "Berlin, Deutschland"
+      },
+      "role": {
+        "label": "Rolle",
+        "value": "Fullstack / Product Developer"
+      },
       "focus": {
         "label": "Fokus",
         "value": "Web · SaaS · Automatisierung · KI"
@@ -67,22 +80,45 @@
   },
   "TechStack": {
     "eyebrow": "Technologie",
-    "title": "Tech Stack",
-    "description": "Technologien, mit denen ich Software entwerfe, entwickle und in Produktion bringe.",
+    "title": "Stack",
+    "headline": "Werkzeuge für vollständige Produkte",
+    "description": "Eine sorgfältig ausgewählte Technologie-Basis, mit der ich skalierbare Web- und Mobile-Anwendungen entwickle – von der Idee bis in die Produktion.",
+    "core": {
+      "react": "UI · Components · Web",
+      "reactNative": "Mobile · Native · Everywhere",
+      "nextjs": "Web · SSR · Scale",
+      "postgresql": "Data · Reliable · Scalable",
+      "nestjs": "API · Logic · Systems"
+    },
+    "flowStart": "Ideen in Produkte",
+    "flowEnd": "Skalierbare Lösungen",
+    "foundation": "Solides Fundament",
+    "process": "Build / Connect / Scale",
     "categories": {
       "frontend": "Frontend",
       "mobile": "Mobile",
       "backend": "Backend",
       "database": "Datenbanken",
       "infrastructure": "Infrastruktur",
-      "services": "Services & APIs"
-    }
+      "services": "Services & APIs",
+      "tools": "Tools",
+      "design": "Design"
+    },
+    "outroLeft": "Technology drives opportunity",
+    "outroRight": "For a brighter tomorrow"
   },
   "Projects": {
     "eyebrow": "Projekte",
-    "title": "Ausgewählte Projekte",
-    "description": "Eine Auswahl an eigenen Produkten und Kundenprojekten, die ich vollständig konzipiert und entwickelt habe.",
-    "cta": "Projekt ansehen",
+    "selection": "Auswahl",
+    "headline": "Produkte mit echter Substanz",
+    "description": "Eigene Produkte und Kundenlösungen – konzipiert, entwickelt und bis in den Betrieb begleitet.",
+    "cta": "Case Study ansehen",
+    "caseStudyPending": "Case Study folgt in Kürze",
+    "meta": {
+      "role": "Rolle",
+      "status": "Status",
+      "technologies": "Technologien"
+    },
     "categories": {
       "saas": "SaaS / Entwickler-Plattform",
       "edtech": "EdTech / Telegram-Bot / KI",
@@ -95,6 +131,11 @@
       "commercial": "Commercial",
       "concept": "Konzept"
     },
+    "roles": {
+      "fullstack-product": "Fullstack & Product Development",
+      "fullstack-development": "Fullstack Development",
+      "frontend-development": "Frontend Development"
+    },
     "descriptions": {
       "dev2lab": "Eine Plattform für Entwickler und Auftraggeber – von Matching und Jobs bis zu Angeboten – als eigenständiges SaaS-Produkt entwickelt.",
       "italiano-daily": "Ein Telegram-Bot für tägliches Italienisch-Training mit Lektionen, Quiz, Streaks und KI-gestütztem Fallback.",
@@ -103,87 +144,258 @@
     }
   },
   "Experience": {
-    "eyebrow": "Werdegang",
-    "title": "Werdegang",
+    "eyebrow": "Erfahrung",
+    "selection": "Werdegang",
+    "headline": "Technischer Hintergrund. Digitale Zukunft",
+    "description": "Ich verbinde über 20 Jahre technische Erfahrung mit moderner Produktentwicklung – von zuverlässiger IT-Infrastruktur bis zu skalierbaren Web-Anwendungen und eigenen Produkten.",
+    "now": "Heute",
     "items": {
       "freelance": {
-        "period": "2024 – heute",
-        "title": "Freelance Fullstack-Entwickler",
-        "description": "Entwicklung eigener Produkte und kommerzieller Projekte für Kunden als unabhängiger Fullstack-Entwickler."
+        "period": "2024 – Heute",
+        "title": "Freelance Fullstack & Product Developer",
+        "description": "Entwicklung eigener Produkte und Umsetzung kommerzieller Kundenprojekte – von der Konzeption über Architektur und Entwicklung bis zum Deployment und laufenden Betrieb.",
+        "tags": ["SaaS", "Web Apps", "APIs", "Automation", "Deployment"],
+        "cta": "Aktuelle Projekte ansehen",
+        "connectorLabel": "Produkte › Kunden › Wert"
       },
-      "fullstack-development": {
-        "period": "2023 – 2024",
-        "title": "Professionelle Fullstack-Ausbildung",
-        "description": "Praxisorientierte Ausbildung in modernem Frontend- und Backend-Development, Architektur und Projektarbeit."
+      "it-technician": {
+        "period": "2013 – 2022",
+        "title": "IT-Techniker",
+        "description": "Installation und Konfiguration von Hard- und Software, Benutzer-Support im 1st und 2nd Level sowie Betreuung der IT-Infrastruktur. Sicherstellung eines stabilen und zuverlässigen IT-Betriebs.",
+        "tags": ["IT-Infrastruktur", "Support", "Systeme", "Wartung"],
+        "connectorLabel": "Solide Basis › Kontinuierliches Wachstum"
       },
-      "it-background": {
-        "period": "Davor",
-        "title": "Technischer / IT-Hintergrund",
-        "description": "Früherer technischer Werdegang, der die ingenieurwissenschaftliche Grundlage für die spätere Entwicklungsarbeit gelegt hat."
+      "it-service": {
+        "period": "2005 – 2010",
+        "title": "IT-Service & Digitale Schulung",
+        "description": "Wartung und Reparatur von technischen Geräten, Fehleranalyse und Störungsbehebung vor Ort sowie Schulung und Unterstützung von Anwendern im Umgang mit Computern und digitalen Anwendungen.",
+        "tags": ["Service", "Support", "Schulung", "Fehleranalyse"]
       }
+    },
+    "stats": {
+      "years": "20+",
+      "yearsLabel": "Jahre technischer Hintergrund",
+      "statement": "Technik verstehen. Systeme bauen. Verantwortung übernehmen",
+      "noteLeft": "Aus Erfahrung entstehen bessere Lösungen",
+      "noteRight": "Seit 2005 in der digitalen Welt zu Hause"
     }
   },
   "Education": {
     "eyebrow": "Ausbildung",
-    "title": "Ausbildung & Zertifikate",
-    "cta": "Zertifikate ansehen",
-    "items": {
+    "selection": "Qualifikation",
+    "headline": "Fundament. Vertieft durch Praxis",
+    "description": "Ingenieurwissenschaftliche Ausbildung, professionelle Fullstack-Qualifikation und kontinuierliche Weiterbildung.",
+    "connectorLabel": "Vom technischen Fundament zur modernen Produktentwicklung",
+    "entries": {
       "engineering": {
-        "title": "Ingenieurwissenschaftliche Ausbildung",
-        "description": "Akademische Grundlage in Ingenieurwissenschaften als technisches Fundament für die Softwareentwicklung."
+        "period": "1996 – 2000",
+        "title": "Diplom-Ingenieur – Elektriker",
+        "note": "Automatik, Telemechanik & Signaltechnik im Eisenbahnverkehr · ANABIN: Staatliche Hochschule II+",
+        "tags": []
       },
       "fullstack": {
-        "title": "Fullstack Development",
-        "description": "Professionelle Qualifikation in Fullstack-Entwicklung mit Fokus auf modernen Frontend- und Backend-Technologien."
+        "period": "2023 – 2024",
+        "title": "Fullstack-Entwickler",
+        "note": "960 UE Theorie · 160 Std. Praktikum",
+        "tags": ["Frontend", "Backend", "Architektur", "Projektpraxis"]
       }
-    }
+    },
+    "certificatesLabel": "Zertifikate & Weiterbildung",
+    "certificates": {
+      "englishB2": {
+        "period": "2023",
+        "title": "Business English B2"
+      },
+      "founding": {
+        "period": "2010",
+        "title": "Unternehmensgründung"
+      },
+      "itSeminar": {
+        "period": "2005",
+        "title": "IT- & Informationstechnologie"
+      }
+    },
+    "cta": "Zertifikate ansehen",
+    "statement": "Kontinuierlich lernen. Bessere Lösungen bauen"
   },
   "Services": {
     "eyebrow": "Leistungen",
-    "title": "Leistungen",
-    "description": "Was Sie bei mir beauftragen können — von einzelnen Features bis zum kompletten Produkt.",
+    "selection": "Zusammenarbeit",
+    "headline": "Von der Idee bis zum produktiven Betrieb",
+    "description": "Technische Umsetzung mit Produktverständnis — als vollständige Lösung oder gezielte Verstärkung für bestehende Systeme.",
     "items": {
       "web-applications": {
         "title": "Web Applications",
-        "description": "Moderne React- / Next.js-Anwendungen."
+        "description": "Moderne React- / Next.js-Anwendungen.",
+        "tag": "Product Interfaces"
       },
       "fullstack-development": {
         "title": "Fullstack Development",
-        "description": "Frontend, Backend und Datenbank aus einer Hand."
+        "description": "Frontend, Backend und Datenbank aus einer Hand.",
+        "tag": "End-to-End"
       },
       "backend-api": {
         "title": "Backend & API",
-        "description": "NestJS- / Node.js-APIs und Services."
+        "description": "NestJS- / Node.js-APIs und Services.",
+        "tag": "Systems"
       },
       "saas-mvp": {
         "title": "SaaS / MVP",
-        "description": "Aufbau von MVPs und SaaS-Produkten."
+        "description": "Aufbau von MVPs und SaaS-Produkten.",
+        "tag": "Product Build"
       },
       "automation": {
         "title": "Automation",
-        "description": "Bots, Integrationen und Workflows."
+        "description": "Bots, Integrationen und Workflows.",
+        "tag": "Efficiency"
       },
       "ai-integrations": {
         "title": "KI-Integrationen",
-        "description": "OpenAI und weitere KI-Integrationen."
+        "description": "OpenAI und weitere KI-Integrationen.",
+        "tag": "Applied AI"
       },
       "existing-projects": {
         "title": "Bestehende Projekte",
-        "description": "Weiterentwicklung bestehender Projekte."
+        "description": "Weiterentwicklung bestehender Projekte.",
+        "tag": "Continuity"
       }
     }
   },
   "Contact": {
     "eyebrow": "Kontakt",
-    "title": "Lassen Sie uns etwas Sinnvolles entwickeln.",
-    "description": "Erzählen Sie mir kurz von Ihrem Projekt — ich melde mich zeitnah zurück.",
-    "cta": "E-Mail schreiben"
+    "selection": "Projektanfrage",
+    "headline": "Lassen Sie uns etwas Sinnvolles bauen",
+    "description": "Erzählen Sie mir kurz von Ihrem Vorhaben. Ich melde mich persönlich mit einer realistischen Einschätzung zurück.",
+    "status": {
+      "available": "Verfügbar für ausgewählte Projekte",
+      "location": "Berlin · Remote",
+      "responseTime": "Antwort in der Regel innerhalb von 1–2 Werktagen"
+    },
+    "trust": "Direkter Kontakt. Keine Agentur. Keine Weiterleitung.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Ihr Name",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "name@unternehmen.de",
+      "projectTypeLabel": "Worum geht es?",
+      "projectTypes": {
+        "webApp": "Web App",
+        "apiBackend": "API / Backend",
+        "saasMvp": "SaaS / MVP",
+        "automation": "Automation / KI",
+        "existingProject": "Bestehendes Projekt"
+      },
+      "messageLabel": "Kurz zum Projekt",
+      "messagePlaceholder": "Was möchten Sie entwickeln oder verbessern?",
+      "websiteLabel": "Website oder Referenz (optional)",
+      "websitePlaceholder": "https://",
+      "privacyLabel": "Ich habe die <link>Datenschutzerklärung</link> gelesen und stimme der Verarbeitung meiner Angaben zu.",
+      "submit": "Projektanfrage senden",
+      "submitPending": "Wird gesendet…",
+      "trustNote": "Unverbindlich · Persönlich beantwortet",
+      "successTitle": "Danke für Ihre Anfrage!",
+      "successMessage": "Ich melde mich innerhalb von 1–2 Werktagen persönlich bei Ihnen.",
+      "successReset": "Neue Anfrage senden",
+      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt per E-Mail.",
+      "errors": {
+        "name": "Bitte geben Sie mindestens 2 Zeichen ein.",
+        "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "projectType": "Bitte wählen Sie eine Option.",
+        "message": "Bitte beschreiben Sie Ihr Vorhaben in mindestens 20 Zeichen.",
+        "website": "Bitte geben Sie eine gültige URL ein.",
+        "privacy": "Bitte stimmen Sie der Datenschutzerklärung zu."
+      }
+    },
+    "diagram": {
+      "idea": "Idee",
+      "architecture": "Architektur",
+      "development": "Entwicklung",
+      "deployment": "Deployment"
+    }
   },
   "Footer": {
-    "location": "Berlin, Deutschland",
+    "location": "Berlin · Remote",
     "legalImpressum": "Impressum",
     "legalDatenschutz": "Datenschutz",
     "copyright": "© {year} Danil Kurmayev",
-    "navAriaLabel": "Footer-Navigation"
+    "navAriaLabel": "Footer-Navigation",
+    "brandDescription": "Digitale Produkte – von der Architektur bis zum Deployment.",
+    "availability": "Verfügbar für ausgewählte Projekte",
+    "backToTop": "Nach oben",
+    "designedIn": "Designed & built in Berlin",
+    "columns": {
+      "navigation": "Navigation",
+      "services": "Leistungen",
+      "contact": "Direkter Kontakt"
+    },
+    "services": {
+      "automationAi": "Automation & KI"
+    },
+    "stages": {
+      "idea": "Ideen",
+      "architecture": "Architektur",
+      "development": "Entwicklung",
+      "deployment": "Deployment"
+    },
+    "tagline": "BUILD\nTHINK\nSHIP\nREPEAT",
+    "coordinates": {
+      "lat": "52.5200° N",
+      "lon": "13.4050° E"
+    }
+  },
+  "NotFound": {
+    "eyebrow": "Fehler 404",
+    "title": "Diese Seite gibt es nicht",
+    "description": "Die aufgerufene Adresse existiert nicht oder wurde verschoben. Vielleicht hilft ein Blick auf die Startseite weiter.",
+    "cta": "Zurück zur Startseite"
+  },
+  "Impressum": {
+    "eyebrow": "Rechtliches",
+    "title": "Impressum",
+    "back": "Zurück zur Startseite",
+    "identity": {
+      "name": "Danil Kurmayev",
+      "company": "Danil Kurmayev Webentwicklung",
+      "street": "Rabensteiner Str. 9",
+      "city": "12689 Berlin"
+    },
+    "contactHeading": "Kontakt",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "disputeHeading": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+    "disputeText": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+    "metaTitle": "Impressum — Danil Kurmayev",
+    "metaDescription": "Impressum von Danil Kurmayev Webentwicklung, Berlin."
+  },
+  "Datenschutz": {
+    "eyebrow": "Rechtliches",
+    "title": "Datenschutz",
+    "intro": "Diese Seite wird derzeit erstellt. Die vollständige Datenschutzerklärung folgt in Kürze.",
+    "back": "Zurück zur Startseite",
+    "sections": {
+      "controller": { "title": "Verantwortlicher", "body": "Wird ergänzt." },
+      "hosting": { "title": "Hosting", "body": "Wird ergänzt." },
+      "contactForm": { "title": "Kontaktformular", "body": "Wird ergänzt." },
+      "cookiesAnalytics": {
+        "title": "Cookies & Analyse",
+        "body": "Wird ergänzt."
+      },
+      "externalServices": {
+        "title": "Externe Dienste",
+        "body": "Wird ergänzt."
+      },
+      "rights": { "title": "Ihre Rechte", "body": "Wird ergänzt." }
+    },
+    "metaTitle": "Datenschutz — Danil Kurmayev",
+    "metaDescription": "Datenschutzerklärung von Danil Kurmayev – aktuell in Vorbereitung."
+  },
+  "Checkliste": {
+    "eyebrow": "Kalkulator",
+    "title": "Projektkosten-Rechner",
+    "description": "Hier entsteht ein Rechner, mit dem Sie unverbindlich eine erste Einschätzung zu den Kosten Ihres Projekts erhalten. Aktuell noch in Arbeit.",
+    "ctaHome": "Zurück zur Startseite",
+    "ctaContact": "Direkt per E-Mail anfragen",
+    "metaTitle": "Projektkosten-Rechner (bald verfügbar) — Danil Kurmayev",
+    "metaDescription": "Der Projektkosten-Rechner befindet sich aktuell im Aufbau."
   }
 }

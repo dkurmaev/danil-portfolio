@@ -14,22 +14,22 @@ export function absoluteUrl(path = '/'): string {
   return new URL(path, siteConfig.url).toString();
 }
 
-export function localeHref(locale: AppLocale): string {
-  return absoluteUrl(`/${locale}`);
+export function localeHref(locale: AppLocale, path = ''): string {
+  return absoluteUrl(`/${locale}${path}`);
 }
 
 export function ogLocale(locale: AppLocale): string {
   return OG_LOCALE_MAP[locale];
 }
 
-/** hreflang alternates for every locale, plus x-default pointing at the default locale. */
-export function buildLanguageAlternates(): Record<string, string> {
+/** hreflang alternates for every locale (at `path`, e.g. "/impressum"), plus x-default pointing at the default locale. */
+export function buildLanguageAlternates(path = ''): Record<string, string> {
   const languages: Record<string, string> = {};
 
   for (const locale of locales) {
-    languages[locale] = localeHref(locale);
+    languages[locale] = localeHref(locale, path);
   }
-  languages['x-default'] = localeHref(DEFAULT_LOCALE);
+  languages['x-default'] = localeHref(DEFAULT_LOCALE, path);
 
   return languages;
 }

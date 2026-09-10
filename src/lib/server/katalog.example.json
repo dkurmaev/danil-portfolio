@@ -1,0 +1,431 @@
+{
+  "hourlyRate": 50,
+  "levelMultipliers": {
+    "standard": 1,
+    "bekanntschaft": 0.7,
+    "familie": 0.5
+  },
+  "items": [
+    {
+      "code": "site-page",
+      "category": "website-scope",
+      "unit": "pro_seite",
+      "hours": 2
+    },
+    {
+      "code": "site-language",
+      "category": "website-scope",
+      "unit": "pro_sprache",
+      "hours": 3
+    },
+    {
+      "code": "site-section",
+      "category": "website-scope",
+      "unit": "pro_abschnitt",
+      "hours": 1
+    },
+
+    {
+      "code": "site-build-onepager",
+      "category": "website-erstellung",
+      "unit": "einmalig",
+      "hours": 12
+    },
+    {
+      "code": "site-build-landingpage",
+      "category": "website-erstellung",
+      "unit": "einmalig",
+      "hours": 16
+    },
+    {
+      "code": "site-build-business",
+      "category": "website-erstellung",
+      "unit": "einmalig",
+      "hours": 26
+    },
+    {
+      "code": "site-build-business-extended",
+      "category": "website-erstellung",
+      "unit": "einmalig",
+      "hours": 36
+    },
+    {
+      "code": "site-build-react-migration",
+      "category": "website-erstellung",
+      "unit": "einmalig",
+      "hours": 13
+    },
+    {
+      "code": "site-build-complete-revamp",
+      "category": "website-erstellung",
+      "unit": "einmalig",
+      "hours": 17
+    },
+    {
+      "code": "site-build-relaunch-redirect",
+      "category": "website-erstellung",
+      "unit": "einmalig",
+      "hours": 28
+    },
+
+    {
+      "code": "block-hero-startbereich",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-services-overview",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-testimonials",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-gallery",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-before-after",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-team",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-process-steps",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-pricing-overview",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-faq",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-map",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-partner-logos",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-scroll-animations",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "block-hero-video",
+      "category": "website-blocks",
+      "unit": "einmalig",
+      "hours": 2
+    },
+
+    {
+      "code": "feature-contact-form",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-multistep-form",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-file-upload",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-simple-calculator",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-multistep-calculator",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-online-booking",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-telegram-notification",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-whatsapp-button",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-newsletter-signup",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-google-reviews",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "feature-social-feed",
+      "category": "website-features",
+      "unit": "einmalig",
+      "hours": 2
+    },
+
+    {
+      "code": "seo-technical",
+      "category": "seo-legal",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "seo-structured-data",
+      "category": "seo-legal",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "legal-cookie-banner",
+      "category": "seo-legal",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "analytics-setup",
+      "category": "seo-legal",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "google-business-profile",
+      "category": "seo-legal",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "accessibility-check",
+      "category": "seo-legal",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "accessibility-full",
+      "category": "seo-legal",
+      "unit": "einmalig",
+      "hours": 2
+    },
+
+    {
+      "code": "bot-setup",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-guided-dialog",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-data-storage",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-admin",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-booking",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-payments",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-auto-message",
+      "category": "telegram-bot",
+      "unit": "pro_event",
+      "hours": 1.5
+    },
+    {
+      "code": "bot-integration",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-mini-app",
+      "category": "telegram-bot",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "bot-hosting",
+      "category": "telegram-bot",
+      "unit": "monatlich",
+      "hours": 1
+    },
+
+    {
+      "code": "webapp-user-auth",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-roles",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-admin-panel",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-payments",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-subscriptions",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-notifications",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-live-updates",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-excel-export",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-audit-log",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-data-migration",
+      "category": "webapp",
+      "unit": "einmalig",
+      "hours": 2
+    },
+    {
+      "code": "webapp-data-domain",
+      "category": "webapp",
+      "unit": "pro_bereich",
+      "hours": 2
+    },
+
+    {
+      "code": "support-full",
+      "category": "support",
+      "unit": "monatlich",
+      "hours": 2
+    },
+    {
+      "code": "support-small",
+      "category": "support",
+      "unit": "monatlich",
+      "hours": 1
+    },
+    {
+      "code": "support-biannual-check",
+      "category": "support",
+      "unit": "einmalig",
+      "hours": 2
+    }
+  ],
+  "packages": [
+    {
+      "code": "pkg-website-starter",
+      "category": "website-blocks",
+      "includes": [
+        { "itemCode": "block-hero-startbereich", "quantity": 1 },
+        { "itemCode": "block-services-overview", "quantity": 1 },
+        { "itemCode": "feature-contact-form", "quantity": 1 },
+        { "itemCode": "seo-technical", "quantity": 1 },
+        { "itemCode": "legal-cookie-banner", "quantity": 1 }
+      ],
+      "discountHours": 2
+    },
+    {
+      "code": "pkg-telegram-bot-starter",
+      "category": "telegram-bot",
+      "includes": [
+        { "itemCode": "bot-setup", "quantity": 1 },
+        { "itemCode": "bot-guided-dialog", "quantity": 1 },
+        { "itemCode": "bot-data-storage", "quantity": 1 }
+      ],
+      "discountHours": 2
+    }
+  ]
+}

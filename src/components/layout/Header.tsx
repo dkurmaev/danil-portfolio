@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Menu } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -8,22 +8,16 @@ import { MobileMenu } from '@/components/layout/MobileMenu';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
+import { mainNavigation } from '@/config/navigation';
 import { Link } from '@/i18n/navigation';
-
-const NAV_ITEMS = [
-  'about',
-  'projects',
-  'stack',
-  'experience',
-  'services',
-  'contact',
-] as const;
 
 export function Header() {
   const t = useTranslations('Nav');
   const tHeader = useTranslations('Header');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeMenu = useCallback(() => setIsMenuOpen(false), []);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 8);
@@ -35,63 +29,69 @@ export function Header() {
   return (
     <header
       className={[
-        'sticky top-0 z-40 transition-colors duration-300',
+        'sticky top-0 z-40 border-b transition-[background-color,border-color] duration-300 motion-reduce:transition-none',
         isScrolled
-          ? 'border-border bg-bg/95 border-b backdrop-blur-md'
-          : 'border-b border-transparent bg-transparent',
+          ? 'border-border bg-bg/95 backdrop-blur-md'
+          : 'bg-bg/80 border-transparent backdrop-blur-sm',
       ].join(' ')}
     >
-      <Container className="flex h-16 items-center justify-between md:h-20">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="rounded-chip border-border bg-bg-card text-accent flex h-10 w-10 items-center justify-center border font-mono text-sm font-semibold">
-            DK
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span className="text-fg text-sm font-semibold">
-              {tHeader('brandName')}
-            </span>
-            <span className="text-fg-muted hidden font-mono text-[11px] tracking-wider uppercase lg:block">
-              {tHeader('brandRole')}
-            </span>
+      <Container className="flex h-[72px] items-center justify-between lg:h-20">
+        <Link
+          href="/"
+          aria-label={tHeader('homeLabel')}
+          className="focus-visible:ring-accent focus-visible:ring-offset-bg flex items-center gap-3 rounded-sm focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:outline-none"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/brand/dk-logo-mark.svg"
+            alt=""
+            width={52}
+            height={40}
+            className="h-10 w-auto"
+          />
+          <span className="text-fg text-base font-semibold tracking-[-0.02em] whitespace-nowrap sm:text-lg">
+            {tHeader('brandName')}
           </span>
         </Link>
 
         <nav
           aria-label={t('ariaLabel')}
-          className="hidden items-center gap-8 md:flex"
+          className="hidden items-center gap-6 lg:flex xl:gap-8"
         >
-          {NAV_ITEMS.map((item) => (
+          {mainNavigation.map(({ key, href }) => (
             <a
-              key={item}
-              href={`#${item}`}
-              className="text-fg-secondary hover:text-fg text-sm font-medium transition-colors duration-200"
+              key={key}
+              href={href}
+              className="text-fg-secondary hover:text-fg focus-visible:ring-accent focus-visible:ring-offset-bg rounded-sm text-sm font-medium transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:outline-none"
             >
-              {t(item)}
+              {t(key)}
             </a>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitcher />
-          <Button href="#contact" variant="primary">
-            {t('letsTalk')}
+          <Button href="#contact" variant="secondary">
+            {t('projectInquiry')}
           </Button>
         </div>
 
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-3 lg:hidden">
           <LanguageSwitcher />
           <button
             type="button"
             onClick={() => setIsMenuOpen(true)}
             aria-label={t('openMenu')}
-            className="rounded-chip border-border text-fg focus-visible:ring-accent flex h-10 w-10 items-center justify-center border focus-visible:ring-2 focus-visible:outline-none"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
+            className="border-border text-fg hover:bg-bg-elevated focus-visible:ring-accent focus-visible:ring-offset-bg flex h-11 w-11 items-center justify-center rounded-full border transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
           >
             <Menu size={20} aria-hidden="true" />
           </button>
         </div>
       </Container>
 
-      <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+      <MobileMenu isOpen={isMenuOpen} onClose={closeMenu} />
     </header>
   );
 }

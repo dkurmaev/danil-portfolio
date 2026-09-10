@@ -2,7 +2,7 @@ import type { Service } from '@/types/services';
 
 export const services: Service[] = [
   { id: 'web-applications' },
-  { id: 'fullstack-development' },
+  { id: 'fullstack-development', featured: true },
   { id: 'backend-api' },
   { id: 'saas-mvp' },
   { id: 'automation' },

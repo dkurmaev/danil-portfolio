@@ -12,11 +12,15 @@
   "Nav": {
     "about": "Обо мне",
     "projects": "Проекты",
+    "expertise": "Экспертиза",
+    "career": "Путь",
     "stack": "Стек",
     "experience": "Опыт",
     "services": "Услуги",
     "contact": "Контакты",
     "calculator": "Калькулятор",
+    "projectInquiry": "Обсудить проект",
+    "language": "Язык",
     "letsTalk": "Поговорим",
     "openMenu": "Открыть меню",
     "closeMenu": "Закрыть меню",
@@ -24,7 +28,8 @@
   },
   "Header": {
     "brandName": "Данил Курмаев",
-    "brandRole": "Fullstack-разработчик"
+    "brandRole": "Fullstack-разработчик",
+    "homeLabel": "На главную страницу Данила Курмаева"
   },
   "Social": {
     "github": "GitHub",
@@ -32,30 +37,42 @@
     "email": "Email"
   },
   "Hero": {
-    "eyebrow": "Fullstack / Product Developer",
-    "titleLine1": "Цифровые продукты.",
-    "titleLine2": "Продуманные и",
-    "titleLine3": "полностью реализованные.",
-    "description": "Проектирую и разрабатываю современные веб-приложения, API и цифровые продукты — от идеи и архитектуры до deployment.",
+    "eyebrow": "Fullstack & Product Developer",
+    "titleLine1": "От идеи до работающего",
+    "titleLine2": "цифрового продукта.",
+    "description": "Создаю веб-приложения и цифровые продукты целиком — от архитектуры и интерфейса до backend, интеграций и запуска в production.",
     "techRow1": "React · Next.js · NestJS · PostgreSQL · React Native",
-    "techRow2": "Web Apps · APIs · SaaS · Automation · Deployment",
-    "ctaPrimary": "Смотреть проекты",
+    "techRow2": "Веб-приложения · API · SaaS · Автоматизация · Deployment",
+    "ctaPrimary": "Посмотреть проекты",
     "ctaSecondary": "Связаться со мной",
-    "ctaTertiary": "Рассчитать стоимость проекта бесплатно",
-    "availabilityAvailable": "Открыт для интересных проектов"
+    "ctaTertiary": "Рассчитать стоимость проекта",
+    "availabilityAvailable": "Открыт для интересных проектов",
+    "portraitAlt": "Портрет Danil Kurmayev"
   },
+
   "About": {
-    "eyebrow": "Обо мне",
+    "eyebrow": "About / Обо мне",
     "title": "Обо мне",
+    "headlineLine1": "Техническое мышление",
+    "headlineLine2": "Продукты со смыслом",
     "paragraphs": [
       "Я fullstack- и product-разработчик с техническим бэкграундом и инженерным образованием, дополненным профессиональной квалификацией в области fullstack-разработки.",
       "Работаю как над собственными продуктами, так и над коммерческими проектами для заказчиков — от идеи и архитектуры до сопровождения в production.",
       "Живу и работаю в Берлине, использую современные технологии для web, автоматизации и AI-интеграций."
     ],
     "cards": {
-      "location": { "label": "Локация", "value": "Берлин, Германия" },
-      "role": { "label": "Роль", "value": "Fullstack / Product Developer" },
-      "focus": { "label": "Фокус", "value": "Web · SaaS · Автоматизация · AI" },
+      "location": {
+        "label": "Локация",
+        "value": "Берлин, Германия"
+      },
+      "role": {
+        "label": "Роль",
+        "value": "Fullstack / Product Developer"
+      },
+      "focus": {
+        "label": "Фокус",
+        "value": "Web · SaaS · Автоматизация · AI"
+      },
       "languages": {
         "label": "Языки",
         "value": "Немецкий · Английский · Русский"
@@ -64,22 +81,45 @@
   },
   "TechStack": {
     "eyebrow": "Технологии",
-    "title": "Стек технологий",
-    "description": "Технологии, которые я использую для проектирования, разработки и вывода продуктов в продакшн.",
+    "title": "Стек",
+    "headline": "Инструменты для целостных продуктов",
+    "description": "Продуманная технологическая основа для масштабируемых веб- и мобильных приложений — от первой идеи до запуска в продакшн.",
+    "core": {
+      "react": "UI · Компоненты · Web",
+      "reactNative": "Mobile · Нативно · Везде",
+      "nextjs": "Web · SSR · Масштаб",
+      "postgresql": "Данные · Надёжность · Масштаб",
+      "nestjs": "API · Логика · Системы"
+    },
+    "flowStart": "Идеи в продукты",
+    "flowEnd": "Масштабируемые решения",
+    "foundation": "Надёжная основа",
+    "process": "Build / Connect / Scale",
     "categories": {
       "frontend": "Frontend",
       "mobile": "Мобильная разработка",
       "backend": "Backend",
       "database": "Базы данных",
       "infrastructure": "Инфраструктура",
-      "services": "Сервисы и API"
-    }
+      "services": "Сервисы и API",
+      "tools": "Инструменты",
+      "design": "Дизайн"
+    },
+    "outroLeft": "Technology drives opportunity",
+    "outroRight": "For a brighter tomorrow"
   },
   "Projects": {
     "eyebrow": "Проекты",
-    "title": "Избранные проекты",
-    "description": "Подборка собственных продуктов и клиентских проектов, которые я спроектировал и разработал целиком.",
-    "cta": "Смотреть проект",
+    "selection": "Подборка",
+    "headline": "Продукты с реальной сутью",
+    "description": "Свои продукты и клиентские решения — от концепции до разработки и сопровождения в проде.",
+    "cta": "Смотреть кейс",
+    "caseStudyPending": "Кейс скоро появится",
+    "meta": {
+      "role": "Роль",
+      "status": "Статус",
+      "technologies": "Технологии"
+    },
     "categories": {
       "saas": "SaaS / платформа для разработчиков",
       "edtech": "EdTech / Telegram-бот / AI",
@@ -92,6 +132,11 @@
       "commercial": "Commercial",
       "concept": "Концепт"
     },
+    "roles": {
+      "fullstack-product": "Fullstack- и продуктовая разработка",
+      "fullstack-development": "Fullstack-разработка",
+      "frontend-development": "Frontend-разработка"
+    },
     "descriptions": {
       "dev2lab": "Платформа для разработчиков и заказчиков — matching, задачи, офферы — реализована как самостоятельный SaaS-продукт.",
       "italiano-daily": "Telegram-бот для ежедневной практики итальянского: уроки, квизы, streak и AI fallback.",
@@ -101,86 +146,263 @@
   },
   "Experience": {
     "eyebrow": "Опыт",
-    "title": "Опыт",
+    "selection": "Карьера",
+    "headline": "Технический бэкграунд. Цифровое будущее",
+    "description": "Я объединяю более 20 лет технического опыта с современной продуктовой разработкой — от надёжной IT-инфраструктуры до масштабируемых веб-приложений и собственных продуктов.",
+    "now": "Сейчас",
     "items": {
       "freelance": {
         "period": "2024 — по настоящее время",
-        "title": "Freelance fullstack-разработчик",
-        "description": "Разработка собственных продуктов и коммерческих проектов для клиентов в качестве независимого fullstack-разработчика."
+        "title": "Freelance Fullstack & Product Developer",
+        "description": "Разработка собственных продуктов и коммерческих проектов для клиентов — от концепции и архитектуры до разработки, деплоя и сопровождения.",
+        "tags": ["SaaS", "Web-приложения", "API", "Автоматизация", "Деплой"],
+        "cta": "Смотреть текущие проекты",
+        "connectorLabel": "Продукты › Клиенты › Ценность"
       },
-      "fullstack-development": {
-        "period": "2023–2024",
-        "title": "Профессиональное обучение fullstack-разработке",
-        "description": "Практическое обучение современной frontend- и backend-разработке, архитектуре и проектной работе."
+      "it-technician": {
+        "period": "2013—2022",
+        "title": "ИТ-техник",
+        "description": "Установка и настройка оборудования и ПО, поддержка пользователей 1-й и 2-й линии, сопровождение ИТ-инфраструктуры — стабильная и надёжная работа систем.",
+        "tags": ["ИТ-инфраструктура", "Поддержка", "Системы", "Обслуживание"],
+        "connectorLabel": "Прочная основа › Постоянный рост"
       },
-      "it-background": {
-        "period": "Ранее",
-        "title": "Технический / IT-бэкграунд",
-        "description": "Более ранний технический опыт, заложивший инженерную базу для дальнейшей разработки."
+      "it-service": {
+        "period": "2005—2010",
+        "title": "ИТ-сервис и цифровое обучение",
+        "description": "Обслуживание и ремонт техники, диагностика и устранение неисправностей на месте, обучение пользователей работе с компьютерами и цифровыми сервисами.",
+        "tags": ["Сервис", "Поддержка", "Обучение", "Диагностика"]
       }
+    },
+    "stats": {
+      "years": "20+",
+      "yearsLabel": "лет технического опыта",
+      "statement": "Понимать технологии. Строить системы. Нести ответственность",
+      "noteLeft": "Опыт рождает лучшие решения",
+      "noteRight": "В цифровом мире с 2005 года"
     }
   },
   "Education": {
     "eyebrow": "Образование",
-    "title": "Образование и сертификаты",
-    "cta": "Смотреть сертификаты",
-    "items": {
+    "selection": "Квалификация",
+    "headline": "Фундамент. Закреплённый практикой",
+    "description": "Инженерное образование, профессиональная fullstack-квалификация и непрерывное обучение.",
+    "connectorLabel": "От технической базы к современной разработке продуктов",
+    "entries": {
       "engineering": {
-        "title": "Инженерное образование",
-        "description": "Академическая инженерная подготовка как техническая база для разработки программного обеспечения."
+        "period": "1996 – 2000",
+        "title": "Дипломированный инженер – электротехника",
+        "note": "Автоматика, телемеханика и сигнализация на железнодорожном транспорте · ANABIN: Staatliche Hochschule II+",
+        "tags": []
       },
       "fullstack": {
-        "title": "Fullstack Development",
-        "description": "Профессиональная квалификация в области fullstack-разработки с фокусом на современных frontend- и backend-технологиях."
+        "period": "2023 – 2024",
+        "title": "Fullstack-разработчик",
+        "note": "960 уч. часов теории · 160 часов практики",
+        "tags": ["Frontend", "Backend", "Архитектура", "Проектная практика"]
       }
-    }
+    },
+    "certificatesLabel": "Сертификаты и повышение квалификации",
+    "certificates": {
+      "englishB2": {
+        "period": "2023",
+        "title": "Business English B2"
+      },
+      "founding": {
+        "period": "2010",
+        "title": "Основание компании"
+      },
+      "itSeminar": {
+        "period": "2005",
+        "title": "ИТ и информационные технологии"
+      }
+    },
+    "cta": "Смотреть сертификаты",
+    "statement": "Постоянно учиться. Создавать лучшие решения"
   },
   "Services": {
     "eyebrow": "Услуги",
-    "title": "Услуги",
-    "description": "Что можно заказать — от отдельных фич до готового продукта.",
+    "selection": "Сотрудничество",
+    "headline": "От идеи до продакшена",
+    "description": "Техническая реализация с пониманием продукта — как полное решение или точечное усиление существующих систем.",
     "items": {
       "web-applications": {
         "title": "Веб-приложения",
-        "description": "Современные приложения на React / Next.js."
+        "description": "Современные приложения на React / Next.js.",
+        "tag": "Интерфейсы продукта"
       },
       "fullstack-development": {
         "title": "Fullstack-разработка",
-        "description": "Frontend, backend и база данных — от начала до конца."
+        "description": "Frontend, backend и база данных — от начала до конца.",
+        "tag": "Полный цикл"
       },
       "backend-api": {
         "title": "Backend и API",
-        "description": "API и сервисы на NestJS / Node.js."
+        "description": "API и сервисы на NestJS / Node.js.",
+        "tag": "Системы"
       },
       "saas-mvp": {
         "title": "SaaS / MVP",
-        "description": "Разработка MVP и SaaS-продуктов."
+        "description": "Разработка MVP и SaaS-продуктов.",
+        "tag": "Сборка продукта"
       },
       "automation": {
         "title": "Автоматизация",
-        "description": "Боты, интеграции и рабочие процессы."
+        "description": "Боты, интеграции и рабочие процессы.",
+        "tag": "Эффективность"
       },
       "ai-integrations": {
         "title": "AI-интеграции",
-        "description": "OpenAI и другие AI-интеграции."
+        "description": "OpenAI и другие AI-интеграции.",
+        "tag": "Прикладной ИИ"
       },
       "existing-projects": {
         "title": "Доработка существующих проектов",
-        "description": "Развитие и доработка уже существующих проектов."
+        "description": "Развитие и доработка уже существующих проектов.",
+        "tag": "Преемственность"
       }
     }
   },
   "Contact": {
     "eyebrow": "Контакты",
-    "title": "Давайте создадим что-нибудь полезное.",
-    "description": "Коротко расскажите о своём проекте — я отвечу в ближайшее время.",
-    "cta": "Написать письмо"
+    "selection": "Заявка на проект",
+    "headline": "Давайте создадим что-нибудь полезное",
+    "description": "Коротко расскажите о своём проекте. Я лично отвечу с реалистичной оценкой.",
+    "status": {
+      "available": "Свободен для отдельных проектов",
+      "location": "Берлин · Remote",
+      "responseTime": "Обычно отвечаю в течение 1–2 рабочих дней"
+    },
+    "trust": "Прямой контакт. Без агентства. Без передачи третьим лицам.",
+    "form": {
+      "nameLabel": "Имя",
+      "namePlaceholder": "Ваше имя",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "name@company.com",
+      "projectTypeLabel": "О чём проект?",
+      "projectTypes": {
+        "webApp": "Web App",
+        "apiBackend": "API / Backend",
+        "saasMvp": "SaaS / MVP",
+        "automation": "Автоматизация / AI",
+        "existingProject": "Существующий проект"
+      },
+      "messageLabel": "Коротко о проекте",
+      "messagePlaceholder": "Что хотите разработать или улучшить?",
+      "websiteLabel": "Сайт или референс (опционально)",
+      "websitePlaceholder": "https://",
+      "privacyLabel": "Я ознакомился(-лась) с <link>политикой конфиденциальности</link> и согласен(-на) на обработку моих данных.",
+      "submit": "Отправить заявку",
+      "submitPending": "Отправка…",
+      "trustNote": "Без обязательств · Отвечаю лично",
+      "successTitle": "Спасибо за заявку!",
+      "successMessage": "Отвечу лично в течение 1–2 рабочих дней.",
+      "successReset": "Отправить ещё одну заявку",
+      "errorMessage": "Что-то пошло не так. Попробуйте ещё раз или напишите мне напрямую на почту.",
+      "errors": {
+        "name": "Введите не менее 2 символов.",
+        "email": "Введите корректный E-Mail-адрес.",
+        "projectType": "Выберите один из вариантов.",
+        "message": "Опишите проект — минимум 20 символов.",
+        "website": "Введите корректный URL.",
+        "privacy": "Подтвердите согласие с политикой конфиденциальности."
+      }
+    },
+    "diagram": {
+      "idea": "Идея",
+      "architecture": "Архитектура",
+      "development": "Разработка",
+      "deployment": "Деплой"
+    }
   },
   "Footer": {
-    "location": "Берлин, Германия",
+    "location": "Берлин · Remote",
     "legalImpressum": "Impressum",
     "legalDatenschutz": "Политика конфиденциальности",
     "copyright": "© {year} Данил Курмаев",
-    "navAriaLabel": "Навигация в подвале"
+    "navAriaLabel": "Навигация в подвале",
+    "brandDescription": "Цифровые продукты — от архитектуры до деплоя.",
+    "availability": "Свободен для отдельных проектов",
+    "backToTop": "Наверх",
+    "designedIn": "Designed & built in Berlin",
+    "columns": {
+      "navigation": "Навигация",
+      "services": "Услуги",
+      "contact": "Прямой контакт"
+    },
+    "services": {
+      "automationAi": "Автоматизация и AI"
+    },
+    "stages": {
+      "idea": "Идея",
+      "architecture": "Архитектура",
+      "development": "Разработка",
+      "deployment": "Деплой"
+    },
+    "tagline": "BUILD\nTHINK\nSHIP\nREPEAT",
+    "coordinates": {
+      "lat": "52.5200° N",
+      "lon": "13.4050° E"
+    }
+  },
+  "NotFound": {
+    "eyebrow": "Ошибка 404",
+    "title": "Такой страницы нет",
+    "description": "Запрошенный адрес не существует или был перемещён. Возможно, стоит начать с главной страницы.",
+    "cta": "На главную"
+  },
+  "Impressum": {
+    "eyebrow": "Rechtliches",
+    "title": "Impressum",
+    "back": "Zurück zur Startseite",
+    "identity": {
+      "name": "Danil Kurmayev",
+      "company": "Danil Kurmayev Webentwicklung",
+      "street": "Rabensteiner Str. 9",
+      "city": "12689 Berlin"
+    },
+    "contactHeading": "Kontakt",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "disputeHeading": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+    "disputeText": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+    "metaTitle": "Impressum — Danil Kurmayev",
+    "metaDescription": "Impressum von Danil Kurmayev Webentwicklung, Berlin."
+  },
+  "Datenschutz": {
+    "eyebrow": "Юридическое",
+    "title": "Политика конфиденциальности",
+    "intro": "Страница находится в разработке. Полный текст политики конфиденциальности появится в ближайшее время.",
+    "back": "На главную",
+    "sections": {
+      "controller": {
+        "title": "Ответственное лицо",
+        "body": "Будет дополнено."
+      },
+      "hosting": { "title": "Хостинг", "body": "Будет дополнено." },
+      "contactForm": {
+        "title": "Контактная форма",
+        "body": "Будет дополнено."
+      },
+      "cookiesAnalytics": {
+        "title": "Cookies и аналитика",
+        "body": "Будет дополнено."
+      },
+      "externalServices": {
+        "title": "Внешние сервисы",
+        "body": "Будет дополнено."
+      },
+      "rights": { "title": "Ваши права", "body": "Будет дополнено." }
+    },
+    "metaTitle": "Политика конфиденциальности — Данил Курмаев",
+    "metaDescription": "Политика конфиденциальности Данила Курмаева — страница в разработке."
+  },
+  "Checkliste": {
+    "eyebrow": "Калькулятор",
+    "title": "Калькулятор стоимости проекта",
+    "description": "Здесь появится калькулятор для быстрой предварительной оценки стоимости вашего проекта. Пока в разработке.",
+    "ctaHome": "На главную",
+    "ctaContact": "Написать напрямую на почту",
+    "metaTitle": "Калькулятор стоимости проекта (скоро) — Данил Курмаев",
+    "metaDescription": "Калькулятор стоимости проекта сейчас в разработке."
   }
 }

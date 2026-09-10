@@ -4,6 +4,7 @@ import type {
   ReactNode,
 } from 'react';
 
+import { Link } from '@/i18n/navigation';
 import { cn } from '@/lib/cn';
 
 type Variant = 'primary' | 'secondary' | 'ghost';
@@ -45,6 +46,18 @@ export function Button({
   if ('href' in props && typeof props.href === 'string') {
     const { href, ...anchorProps } = props;
     const isExternal = /^https?:|^mailto:/.test(href);
+    const isAnchor = href.startsWith('#');
+
+    // Real internal routes go through next-intl's Link so the current
+    // locale is preserved; same-page anchors and external/mailto links
+    // stay plain <a> tags.
+    if (!isExternal && !isAnchor) {
+      return (
+        <Link href={href} className={classes} {...anchorProps}>
+          {children}
+        </Link>
+      );
+    }
 
     return (
       <a

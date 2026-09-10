@@ -18,9 +18,6 @@ interface HomeProps {
 export default async function Home({ params }: HomeProps) {
   const { locale } = await params;
 
-  // Locale validity is already enforced by the layout above; this call only
-  // primes next-intl's per-request cache so this segment can be prerendered
-  // statically instead of opting into `headers()`-based dynamic rendering.
   setRequestLocale(locale);
 
   return (

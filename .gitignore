@@ -25,6 +25,9 @@ yarn-error.log*
 .env
 .env*.local
 
+# pricing engine: real rates/coefficients, never public
+/src/lib/server/katalog.json
+
 # vercel
 .vercel
 

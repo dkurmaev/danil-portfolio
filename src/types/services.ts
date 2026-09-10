@@ -9,4 +9,6 @@ export type ServiceCategory =
 
 export interface Service {
   id: ServiceCategory;
+  /** Visually emphasized row (accent border/background/tag) — the primary offering. */
+  featured?: boolean;
 }

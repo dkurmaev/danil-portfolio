@@ -1,6 +1,7 @@
-import { Mail } from 'lucide-react';
+import { ArrowUpRight, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
+import { cn } from '@/lib/cn';
 import { socialLinks } from '@/config/social';
 
 function GithubIcon() {
@@ -43,17 +44,41 @@ const items = [
 
 interface SocialLinksProps {
   className?: string;
+  /** 'icon' — bordered icon-only buttons (Header/Footer). 'text' — labelled row with an external-link arrow. */
+  variant?: 'icon' | 'text';
 }
 
-export function SocialLinks({ className }: SocialLinksProps) {
+export function SocialLinks({ className, variant = 'icon' }: SocialLinksProps) {
   const t = useTranslations('Social');
 
+  if (variant === 'text') {
+    return (
+      <ul className={cn('divide-border flex items-center divide-x', className)}>
+        {items.map(({ key, href, Icon }) => {
+          const isMail = href.startsWith('mailto:');
+
+          return (
+            <li key={key} className="px-4 first:pl-0">
+              <a
+                href={href}
+                {...(isMail
+                  ? {}
+                  : { target: '_blank', rel: 'noreferrer noopener' })}
+                className="text-fg-secondary hover:text-fg focus-visible:ring-accent inline-flex items-center gap-2 text-sm font-medium transition-colors duration-200 focus-visible:rounded-sm focus-visible:ring-2 focus-visible:outline-none"
+              >
+                <Icon />
+                {t(key)}
+                <ArrowUpRight size={14} aria-hidden="true" />
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
   return (
-    <ul
-      className={['flex items-center gap-3', className]
-        .filter(Boolean)
-        .join(' ')}
-    >
+    <ul className={cn('flex items-center gap-3', className)}>
       {items.map(({ key, href, Icon }) => {
         const isMail = href.startsWith('mailto:');
 

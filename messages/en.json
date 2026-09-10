@@ -12,11 +12,15 @@
   "Nav": {
     "about": "About",
     "projects": "Projects",
+    "expertise": "Expertise",
+    "career": "Career",
     "stack": "Stack",
     "experience": "Experience",
     "services": "Services",
     "contact": "Contact",
     "calculator": "Calculator",
+    "projectInquiry": "Start a project",
+    "language": "Language",
     "letsTalk": "Let's Talk",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -24,7 +28,8 @@
   },
   "Header": {
     "brandName": "Danil Kurmayev",
-    "brandRole": "Fullstack Developer"
+    "brandRole": "Fullstack Developer",
+    "homeLabel": "Danil Kurmayev home page"
   },
   "Social": {
     "github": "GitHub",
@@ -32,30 +37,41 @@
     "email": "Email"
   },
   "Hero": {
-    "eyebrow": "Fullstack / Product Developer",
-    "titleLine1": "Digital products.",
-    "titleLine2": "Thoughtfully designed,",
-    "titleLine3": "fully built.",
-    "description": "I design and build modern web applications, APIs and digital products — from idea and architecture to deployment.",
+    "eyebrow": "Fullstack & Product Developer",
+    "titleLine1": "From an idea to a working",
+    "titleLine2": "digital product.",
+    "description": "I build web applications and digital products end to end — from architecture and frontend to backend, integrations and production.",
     "techRow1": "React · Next.js · NestJS · PostgreSQL · React Native",
     "techRow2": "Web Apps · APIs · SaaS · Automation · Deployment",
     "ctaPrimary": "View Projects",
-    "ctaSecondary": "Contact Me",
-    "ctaTertiary": "Get a non-binding cost estimate",
-    "availabilityAvailable": "Available for selected projects"
+    "ctaSecondary": "Get in Touch",
+    "ctaTertiary": "Estimate Your Project",
+    "availabilityAvailable": "Available for selected projects",
+    "portraitAlt": "Portrait of Danil Kurmayev"
   },
   "About": {
-    "eyebrow": "About",
+    "eyebrow": "About / Profile",
     "title": "About Me",
+    "headlineLine1": "Technical thinking",
+    "headlineLine2": "Products with substance",
     "paragraphs": [
       "I'm a Fullstack / Product Developer with a technical background and an engineering education, complemented by a professional qualification in Fullstack development.",
       "I work on my own products as well as commercial projects for clients — from the initial idea and architecture through to running them in production.",
       "I'm based in Berlin and build with modern technologies across web, automation and AI integrations."
     ],
     "cards": {
-      "location": { "label": "Location", "value": "Berlin, Germany" },
-      "role": { "label": "Role", "value": "Fullstack / Product Developer" },
-      "focus": { "label": "Focus", "value": "Web · SaaS · Automation · AI" },
+      "location": {
+        "label": "Location",
+        "value": "Berlin, Germany"
+      },
+      "role": {
+        "label": "Role",
+        "value": "Fullstack / Product Developer"
+      },
+      "focus": {
+        "label": "Focus",
+        "value": "Web · SaaS · Automation · AI"
+      },
       "languages": {
         "label": "Languages",
         "value": "German · English · Russian"
@@ -64,22 +80,45 @@
   },
   "TechStack": {
     "eyebrow": "Technology",
-    "title": "Tech Stack",
-    "description": "Technologies I use to design, build and ship production software.",
+    "title": "Stack",
+    "headline": "Tools for complete products",
+    "description": "A carefully selected technology foundation for building scalable web and mobile applications – from the first idea to production.",
+    "core": {
+      "react": "UI · Components · Web",
+      "reactNative": "Mobile · Native · Everywhere",
+      "nextjs": "Web · SSR · Scale",
+      "postgresql": "Data · Reliable · Scalable",
+      "nestjs": "API · Logic · Systems"
+    },
+    "flowStart": "Ideas into products",
+    "flowEnd": "Scalable solutions",
+    "foundation": "Solid foundation",
+    "process": "Build / Connect / Scale",
     "categories": {
       "frontend": "Frontend",
       "mobile": "Mobile",
       "backend": "Backend",
       "database": "Database",
       "infrastructure": "Infrastructure",
-      "services": "Services & APIs"
-    }
+      "services": "Services & APIs",
+      "tools": "Tools",
+      "design": "Design"
+    },
+    "outroLeft": "Technology drives opportunity",
+    "outroRight": "For a brighter tomorrow"
   },
   "Projects": {
     "eyebrow": "Work",
-    "title": "Featured Projects",
-    "description": "A selection of products and client projects I designed and built end to end.",
-    "cta": "View project",
+    "selection": "Selection",
+    "headline": "Products with real substance",
+    "description": "My own products and client solutions – conceived, built and supported all the way into production.",
+    "cta": "View case study",
+    "caseStudyPending": "Case study coming soon",
+    "meta": {
+      "role": "Role",
+      "status": "Status",
+      "technologies": "Technologies"
+    },
     "categories": {
       "saas": "SaaS / Developer Platform",
       "edtech": "EdTech / Telegram Bot / AI",
@@ -92,6 +131,11 @@
       "commercial": "Commercial",
       "concept": "Concept"
     },
+    "roles": {
+      "fullstack-product": "Fullstack & Product Development",
+      "fullstack-development": "Fullstack Development",
+      "frontend-development": "Frontend Development"
+    },
     "descriptions": {
       "dev2lab": "A developer and client platform for matching, jobs, offers and IT collaboration — built end to end as a personal SaaS product.",
       "italiano-daily": "A Telegram bot for daily Italian practice with lessons, quizzes, streaks and AI-powered fallback.",
@@ -101,86 +145,257 @@
   },
   "Experience": {
     "eyebrow": "Experience",
-    "title": "Experience",
+    "selection": "Career",
+    "headline": "Technical background. Digital future",
+    "description": "I combine more than 20 years of technical experience with modern product development – from reliable IT infrastructure to scalable web applications and my own products.",
+    "now": "Now",
     "items": {
       "freelance": {
-        "period": "2024 — Present",
-        "title": "Freelance Fullstack Developer",
-        "description": "Building own products and commercial client projects as an independent fullstack developer."
+        "period": "2024 – Present",
+        "title": "Freelance Fullstack & Product Developer",
+        "description": "Building my own products and delivering commercial client projects – from concept through architecture and development to deployment and ongoing operations.",
+        "tags": ["SaaS", "Web Apps", "APIs", "Automation", "Deployment"],
+        "cta": "View current projects",
+        "connectorLabel": "Products › Clients › Value"
       },
-      "fullstack-development": {
-        "period": "2023 – 2024",
-        "title": "Professional Fullstack Development",
-        "description": "Hands-on training in modern frontend and backend development, architecture and project work."
+      "it-technician": {
+        "period": "2013 – 2022",
+        "title": "IT Technician",
+        "description": "Installed and configured hardware and software, provided 1st and 2nd level user support, and maintained IT infrastructure – keeping day-to-day operations stable and reliable.",
+        "tags": ["IT Infrastructure", "Support", "Systems", "Maintenance"],
+        "connectorLabel": "Solid Foundation › Continuous Growth"
       },
-      "it-background": {
-        "period": "Earlier",
-        "title": "Technical / IT Background",
-        "description": "Earlier technical experience that laid the engineering foundation for later development work."
+      "it-service": {
+        "period": "2005 – 2010",
+        "title": "IT Service & Digital Training",
+        "description": "Maintained and repaired technical equipment, diagnosed and resolved issues on-site, and trained users in working with computers and digital tools.",
+        "tags": ["Service", "Support", "Training", "Diagnostics"]
       }
+    },
+    "stats": {
+      "years": "20+",
+      "yearsLabel": "Years of technical background",
+      "statement": "Understand technology. Build systems. Own the outcome",
+      "noteLeft": "Better solutions come from experience",
+      "noteRight": "At home in the digital world since 2005"
     }
   },
   "Education": {
     "eyebrow": "Education",
-    "title": "Education & Certifications",
-    "cta": "View certificates",
-    "items": {
+    "selection": "Qualification",
+    "headline": "Foundation. Deepened through practice",
+    "description": "Engineering education, a professional fullstack qualification, and continuous learning.",
+    "connectorLabel": "From technical foundation to modern product development",
+    "entries": {
       "engineering": {
-        "title": "Engineering Education",
-        "description": "An academic engineering background providing the technical foundation for software development."
+        "period": "1996 – 2000",
+        "title": "Diplom Engineer – Electrical Engineering",
+        "note": "Automation, telemechanics & signalling in rail transport · ANABIN: Staatliche Hochschule II+",
+        "tags": []
       },
       "fullstack": {
-        "title": "Fullstack Development",
-        "description": "A professional qualification in Fullstack development, focused on modern frontend and backend technologies."
+        "period": "2023 – 2024",
+        "title": "Fullstack Developer",
+        "note": "960 teaching units theory · 160 hours practicum",
+        "tags": ["Frontend", "Backend", "Architecture", "Project practice"]
       }
-    }
+    },
+    "certificatesLabel": "Certificates & Continuing Education",
+    "certificates": {
+      "englishB2": {
+        "period": "2023",
+        "title": "Business English B2"
+      },
+      "founding": {
+        "period": "2010",
+        "title": "Company Founding"
+      },
+      "itSeminar": {
+        "period": "2005",
+        "title": "IT & Information Technology"
+      }
+    },
+    "cta": "View certificates",
+    "statement": "Keep learning. Build better solutions"
   },
   "Services": {
     "eyebrow": "Services",
-    "title": "Services",
-    "description": "What you can hire me for — from individual features to a complete product.",
+    "selection": "Collaboration",
+    "headline": "From idea to production",
+    "description": "Technical execution with product thinking — as a complete solution or targeted support for existing systems.",
     "items": {
       "web-applications": {
         "title": "Web Applications",
-        "description": "Modern React / Next.js applications."
+        "description": "Modern React / Next.js applications.",
+        "tag": "Product Interfaces"
       },
       "fullstack-development": {
         "title": "Fullstack Development",
-        "description": "Frontend, backend and database, end to end."
+        "description": "Frontend, backend and database, end to end.",
+        "tag": "End-to-End"
       },
       "backend-api": {
         "title": "Backend & API",
-        "description": "NestJS / Node.js APIs and services."
+        "description": "NestJS / Node.js APIs and services.",
+        "tag": "Systems"
       },
       "saas-mvp": {
         "title": "SaaS / MVP",
-        "description": "Building MVPs and SaaS products."
+        "description": "Building MVPs and SaaS products.",
+        "tag": "Product Build"
       },
       "automation": {
         "title": "Automation",
-        "description": "Bots, integrations and workflows."
+        "description": "Bots, integrations and workflows.",
+        "tag": "Efficiency"
       },
       "ai-integrations": {
         "title": "AI Integrations",
-        "description": "OpenAI and other AI integrations."
+        "description": "OpenAI and other AI integrations.",
+        "tag": "Applied AI"
       },
       "existing-projects": {
         "title": "Existing Project Development",
-        "description": "Extending and improving existing projects."
+        "description": "Extending and improving existing projects.",
+        "tag": "Continuity"
       }
     }
   },
   "Contact": {
     "eyebrow": "Contact",
-    "title": "Let's build something useful.",
-    "description": "Tell me briefly about your project — I'll get back to you shortly.",
-    "cta": "Write an email"
+    "selection": "Project Inquiry",
+    "headline": "Let's build something useful",
+    "description": "Tell me briefly about your project. I'll get back to you personally with a realistic assessment.",
+    "status": {
+      "available": "Available for select projects",
+      "location": "Berlin · Remote",
+      "responseTime": "Usually replies within 1–2 business days"
+    },
+    "trust": "Direct contact. No agency. No hand-offs.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "name@company.com",
+      "projectTypeLabel": "What is it about?",
+      "projectTypes": {
+        "webApp": "Web App",
+        "apiBackend": "API / Backend",
+        "saasMvp": "SaaS / MVP",
+        "automation": "Automation / AI",
+        "existingProject": "Existing Project"
+      },
+      "messageLabel": "About your project",
+      "messagePlaceholder": "What would you like to build or improve?",
+      "websiteLabel": "Website or reference (optional)",
+      "websitePlaceholder": "https://",
+      "privacyLabel": "I have read the <link>privacy policy</link> and agree to the processing of my data.",
+      "submit": "Send project inquiry",
+      "submitPending": "Sending…",
+      "trustNote": "Non-binding · Personally answered",
+      "successTitle": "Thanks for reaching out!",
+      "successMessage": "I'll personally get back to you within 1–2 business days.",
+      "successReset": "Send another inquiry",
+      "errorMessage": "Something went wrong. Please try again or email me directly.",
+      "errors": {
+        "name": "Please enter at least 2 characters.",
+        "email": "Please enter a valid email address.",
+        "projectType": "Please choose an option.",
+        "message": "Please describe your project in at least 20 characters.",
+        "website": "Please enter a valid URL.",
+        "privacy": "Please agree to the privacy policy."
+      }
+    },
+    "diagram": {
+      "idea": "Idea",
+      "architecture": "Architecture",
+      "development": "Development",
+      "deployment": "Deployment"
+    }
   },
   "Footer": {
-    "location": "Berlin, Germany",
+    "location": "Berlin · Remote",
     "legalImpressum": "Impressum",
     "legalDatenschutz": "Privacy Policy",
     "copyright": "© {year} Danil Kurmayev",
-    "navAriaLabel": "Footer navigation"
+    "navAriaLabel": "Footer navigation",
+    "brandDescription": "Digital products – from architecture to deployment.",
+    "availability": "Available for select projects",
+    "backToTop": "Back to top",
+    "designedIn": "Designed & built in Berlin",
+    "columns": {
+      "navigation": "Navigation",
+      "services": "Services",
+      "contact": "Direct Contact"
+    },
+    "services": {
+      "automationAi": "Automation & AI"
+    },
+    "stages": {
+      "idea": "Idea",
+      "architecture": "Architecture",
+      "development": "Development",
+      "deployment": "Deployment"
+    },
+    "tagline": "BUILD\nTHINK\nSHIP\nREPEAT",
+    "coordinates": {
+      "lat": "52.5200° N",
+      "lon": "13.4050° E"
+    }
+  },
+  "NotFound": {
+    "eyebrow": "Error 404",
+    "title": "This page doesn't exist",
+    "description": "The address you requested doesn't exist or was moved. The homepage might be a good place to start.",
+    "cta": "Back to homepage"
+  },
+  "Impressum": {
+    "eyebrow": "Rechtliches",
+    "title": "Impressum",
+    "back": "Zurück zur Startseite",
+    "identity": {
+      "name": "Danil Kurmayev",
+      "company": "Danil Kurmayev Webentwicklung",
+      "street": "Rabensteiner Str. 9",
+      "city": "12689 Berlin"
+    },
+    "contactHeading": "Kontakt",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "disputeHeading": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+    "disputeText": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+    "metaTitle": "Impressum — Danil Kurmayev",
+    "metaDescription": "Impressum von Danil Kurmayev Webentwicklung, Berlin."
+  },
+  "Datenschutz": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "intro": "This page is currently being prepared. The full privacy policy will follow shortly.",
+    "back": "Back to homepage",
+    "sections": {
+      "controller": { "title": "Data Controller", "body": "Coming soon." },
+      "hosting": { "title": "Hosting", "body": "Coming soon." },
+      "contactForm": { "title": "Contact Form", "body": "Coming soon." },
+      "cookiesAnalytics": {
+        "title": "Cookies & Analytics",
+        "body": "Coming soon."
+      },
+      "externalServices": {
+        "title": "External Services",
+        "body": "Coming soon."
+      },
+      "rights": { "title": "Your Rights", "body": "Coming soon." }
+    },
+    "metaTitle": "Privacy Policy — Danil Kurmayev",
+    "metaDescription": "Privacy policy of Danil Kurmayev — currently in preparation."
+  },
+  "Checkliste": {
+    "eyebrow": "Calculator",
+    "title": "Project Cost Calculator",
+    "description": "A calculator for getting a non-binding first estimate of your project's cost is on its way. Currently under construction.",
+    "ctaHome": "Back to homepage",
+    "ctaContact": "Ask directly by email",
+    "metaTitle": "Project Cost Calculator (coming soon) — Danil Kurmayev",
+    "metaDescription": "The project cost calculator is currently being built."
   }
 }
