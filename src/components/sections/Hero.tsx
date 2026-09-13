@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/Button';
 import { Link } from '@/i18n/navigation';
 
 const BACKGROUND_SIZES = '100vw';
-const PORTRAIT_SIZES = '(min-width: 1024px) 50vw, 100vw';
+const PORTRAIT_SIZES = '(min-width: 1024px) 48vw, 116vw';
 
 export function Hero() {
   const t = useTranslations('Hero');
@@ -21,7 +21,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="border-border bg-bg relative isolate min-h-[calc(100svh-4.5rem)] scroll-mt-[72px] overflow-hidden border-b lg:min-h-[calc(100svh-5rem)] lg:scroll-mt-20"
+      className="border-border bg-bg relative isolate scroll-mt-[72px] overflow-hidden border-b lg:min-h-[calc(100svh-5rem)] lg:scroll-mt-20"
     >
       <Image
         src="/brand/portfolio-hero-background.png"
@@ -29,36 +29,116 @@ export function Hero() {
         fill
         priority
         sizes={BACKGROUND_SIZES}
-        className="-z-20 object-cover object-center"
+        className="-z-20 object-cover object-[64%_center] opacity-70 lg:object-center lg:opacity-100"
       />
 
       <div
         aria-hidden="true"
-        className="from-bg via-bg/75 absolute inset-0 -z-10 bg-gradient-to-r from-0% via-48% to-transparent lg:via-42%"
+        className="from-bg via-bg/90 absolute inset-0 -z-10 bg-gradient-to-r from-0% via-62% to-transparent lg:via-42%"
       />
 
-      <div className="mx-auto grid min-h-[calc(100svh-4.5rem)] w-full max-w-[1760px] grid-cols-1 px-5 md:px-8 lg:min-h-[calc(100svh-5rem)] lg:grid-cols-[minmax(0,52%)_minmax(0,48%)] lg:px-12 xl:px-16">
-        <div className="relative z-10 flex max-w-[820px] flex-col justify-center py-16 sm:py-20 lg:py-14">
-          <p className="text-fg-muted mb-6 font-mono text-xs tracking-[0.2em] uppercase">
+      <div className="relative mx-auto w-full max-w-[1760px] px-5 md:px-8 lg:grid lg:min-h-[calc(100svh-5rem)] lg:grid-cols-[minmax(0,52%)_minmax(0,48%)] lg:px-12 xl:px-16">
+        <div className="relative z-10 flex max-w-[820px] flex-col pt-8 pb-6 sm:py-16 lg:static lg:justify-center lg:py-14">
+          <p className="text-fg-muted relative z-20 mb-4 font-mono text-[0.625rem] tracking-[0.18em] uppercase sm:mb-6 sm:text-xs sm:tracking-[0.2em]">
             {t('eyebrow')}
           </p>
 
           <h1
-            className={`text-fg leading-[0.96] font-bold tracking-[-0.045em] lg:w-[calc(100%+5rem)] xl:w-[calc(100%+7rem)] ${titleSize}`}
+            className={`text-fg relative z-20 font-bold tracking-[-0.025em] lg:w-[calc(100%+5rem)] lg:leading-[0.96] lg:tracking-[-0.045em] xl:w-[calc(100%+7rem)] ${titleSize}`}
           >
-            <span className="block">{t('titleLine1')}</span>
-            <span className="block">{t('titleLine2')}</span>
+            <span className="block text-[clamp(1.45rem,6.2vw,1.7rem)] leading-[1.04] lg:hidden">
+              <span className="block w-[72%] whitespace-nowrap">
+                {t('titleMobileLine1')}
+              </span>
+
+              <span className="mt-1 block w-[65%] whitespace-nowrap">
+                {t('titleMobileLine2')}
+              </span>
+
+              <span className="mt-1 block w-[62%] whitespace-nowrap">
+                {t('titleMobileLine3')}
+              </span>
+            </span>
+
+            <span className="hidden lg:block">
+              <span className="block">{t('titleLine1')}</span>
+              <span className="block">{t('titleLine2')}</span>
+            </span>
           </h1>
 
-          <p className="text-fg-secondary mt-7 max-w-[740px] text-base leading-relaxed sm:text-lg lg:text-xl">
-            {t('description')}
-          </p>
+          <div className="relative -mt-5 h-[285px] sm:mt-7 sm:h-[360px] lg:static lg:h-auto">
+            <div className="absolute -top-20 right-[-38%] z-0 w-[116%] sm:right-[-5%] sm:w-[62%] lg:top-auto lg:right-[-3%] lg:bottom-0 lg:w-[48%] xl:right-[-4%]">
+              <Image
+                src="/brand/danil-portrait-transparent.png"
+                alt={t('portraitAlt')}
+                width={1368}
+                height={1149}
+                priority
+                quality={95}
+                sizes={PORTRAIT_SIZES}
+                className="h-auto w-full max-w-none [mask-image:linear-gradient(to_bottom,black_0%,black_90%,transparent_100%)] object-contain object-top [filter:drop-shadow(0_13px_13px_rgba(17,19,24,0.10))] lg:ml-auto lg:h-[min(78svh,780px)] lg:w-auto lg:origin-bottom lg:scale-[1.035] lg:[mask-image:none] lg:object-bottom"
+              />
+            </div>
 
-          <div className="mt-8 grid w-full max-w-[700px] grid-cols-1 gap-3 sm:grid-cols-2">
-            <Button href="#projects" variant="primary" className="w-full">
+            <p className="text-fg-secondary relative z-10 max-w-[48%] pt-[3.75rem] text-[0.8125rem] leading-[1.55] sm:max-w-[46%] sm:pt-0 sm:text-base lg:mt-7 lg:max-w-[740px] lg:text-xl lg:leading-relaxed">
+              <span className="lg:hidden">{t('descriptionMobile')}</span>
+              <span className="hidden lg:inline">{t('description')}</span>
+            </p>
+
+            <div className="absolute bottom-10 left-0 z-10 flex max-w-[44%] items-center gap-2 text-[0.6875rem] leading-snug text-[#70757B] sm:bottom-10 sm:text-xs lg:hidden">
+              <span
+                aria-hidden="true"
+                className="relative flex h-2 w-2 shrink-0 items-center justify-center"
+              >
+                <span className="absolute inset-0 rounded-full bg-[#5E806C]/40 [animation-duration:2.4s] motion-safe:animate-ping" />
+                <span className="relative h-1.5 w-1.5 rounded-full bg-[#5E806C] shadow-[0_0_0_3px_rgba(94,128,108,0.12)]" />
+              </span>
+              <span>{t('availabilityAvailable')}</span>
+            </div>
+          </div>
+
+          <div className="relative z-20 -mt-2 lg:hidden">
+            <div className="grid grid-cols-[1.18fr_0.82fr] items-center gap-2">
+              <Button
+                href="#projects"
+                variant="primary"
+                className="w-full min-w-0 gap-1.5 bg-[#6C7F93]! px-2 text-[0.75rem] whitespace-nowrap text-white hover:bg-[#5E7186]! focus-visible:ring-[#8798A9] active:bg-[#536678]! min-[390px]:px-3 min-[390px]:text-sm"
+              >
+                {t('ctaPrimary')}
+                <ArrowRight size={13} className="shrink-0" aria-hidden="true" />
+              </Button>
+
+              <a
+                href="#contact"
+                className="inline-flex min-h-12 min-w-0 items-center justify-center rounded-sm px-1 text-center text-[0.75rem] font-medium whitespace-nowrap text-[#303840] transition-colors hover:text-[#53616E] focus-visible:ring-2 focus-visible:ring-[#8798A9] focus-visible:ring-offset-4 focus-visible:outline-none min-[390px]:text-sm"
+              >
+                {t('ctaSecondary')}
+              </a>
+            </div>
+
+            <Link
+              href="/checkliste"
+              className="group mt-4 inline-flex max-w-full items-center gap-2 rounded-sm text-xs leading-snug text-[#53616E] underline decoration-[#8798A9] underline-offset-4 transition-colors hover:text-[#17191D] focus-visible:ring-2 focus-visible:ring-[#8798A9] focus-visible:ring-offset-4 focus-visible:outline-none"
+            >
+              {t('ctaTertiary')}
+              <ArrowRight
+                size={13}
+                className="shrink-0 transition-transform group-hover:translate-x-0.5 motion-reduce:transform-none"
+                aria-hidden="true"
+              />
+            </Link>
+          </div>
+
+          <div className="relative z-20 mt-8 hidden w-full max-w-[700px] grid-cols-2 gap-3 lg:grid">
+            <Button
+              href="#projects"
+              variant="primary"
+              className="w-full bg-[#6C7F93]! text-white hover:bg-[#5E7186]! focus-visible:ring-[#8798A9] active:bg-[#536678]!"
+            >
               {t('ctaPrimary')}
               <ArrowRight size={16} aria-hidden="true" />
             </Button>
+
             <Button href="#contact" variant="secondary" className="w-full">
               {t('ctaSecondary')}
             </Button>
@@ -66,7 +146,7 @@ export function Hero() {
 
           <Link
             href="/checkliste"
-            className="group text-accent decoration-accent/40 hover:decoration-accent focus-visible:ring-accent focus-visible:ring-offset-bg mt-5 inline-flex w-full max-w-[300px] items-center justify-between gap-3 rounded-sm text-sm font-medium underline underline-offset-4 transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:outline-none"
+            className="group focus-visible:ring-offset-bg mt-5 hidden w-full max-w-[300px] items-center justify-between gap-3 rounded-sm text-sm font-medium text-[#6C7F93] underline decoration-[#CBD4DC] underline-offset-4 transition-colors hover:text-[#53616E] focus-visible:ring-2 focus-visible:ring-[#8798A9] focus-visible:ring-offset-4 focus-visible:outline-none lg:inline-flex"
           >
             {t('ctaTertiary')}
             <ArrowRight
@@ -76,7 +156,7 @@ export function Hero() {
             />
           </Link>
 
-          <div className="border-border mt-9 max-w-[650px] border-t pt-6">
+          <div className="border-border relative z-20 mt-9 hidden max-w-[650px] border-t pt-6 lg:block">
             <div className="text-fg-secondary flex items-start gap-3 text-sm">
               <span className="border-border flex h-7 w-7 shrink-0 items-center justify-center border">
                 <Code2 size={14} aria-hidden="true" />
@@ -92,23 +172,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative min-h-[430px] sm:min-h-[540px] lg:min-h-0">
-          <Image
-            src="/brand/danil-portrait-transparent.png"
-            alt={t('portraitAlt')}
-            width={1368}
-            height={1149}
-            priority
-            quality={95}
-            sizes={PORTRAIT_SIZES}
-            className="absolute right-1/2 bottom-0 h-auto w-[min(112%,760px)] max-w-none
-  translate-x-1/2 object-contain object-bottom
-  [filter:drop-shadow(0_21px_21px_rgba(17,19,24,0.13))_drop-shadow(-10px_8px_12px_rgba(108,76,245,0.045))]
-  lg:right-[-3%] lg:h-[min(78svh,780px)] lg:w-auto lg:origin-bottom
-  lg:translate-x-0 lg:scale-[1.035]
-  xl:right-[-4%]"
-          />
-        </div>
+        <div aria-hidden="true" className="hidden lg:block" />
       </div>
     </section>
   );

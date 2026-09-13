@@ -40,6 +40,12 @@
     "eyebrow": "Fullstack & Product Developer",
     "titleLine1": "Von der Idee zum funktionierenden",
     "titleLine2": "digitalen Produkt.",
+    "titleMobileLine1": "Von der Idee zum",
+    "titleMobileLine2": "funktionierenden",
+    "titleMobileLine3": "digitalen Produkt.",
+    "descriptionMobile": "Digitale Produkte – von der Architektur bis zum produktiven Betrieb.",
+    "techMobile1": "React · Next.js · NestJS",
+    "techMobile2": "Web Apps · APIs · SaaS",
     "description": "Ich entwickle Webanwendungen und digitale Produkte ganzheitlich – von der Architektur über Frontend, Backend und Integrationen bis zum produktiven Betrieb.",
     "techRow1": "React · Next.js · NestJS · PostgreSQL · React Native",
     "techRow2": "Webanwendungen · APIs · SaaS · Automatisierung · Deployment",
@@ -390,12 +396,105 @@
     "metaDescription": "Datenschutzerklärung von Danil Kurmayev – aktuell in Vorbereitung."
   },
   "Checkliste": {
+    "metaTitle": "Projekt-Checkliste — Danil Kurmayev",
+    "metaDescription": "In wenigen Schritten zu einer ersten Einschätzung der Projektkosten.",
     "eyebrow": "Kalkulator",
-    "title": "Projektkosten-Rechner",
-    "description": "Hier entsteht ein Rechner, mit dem Sie unverbindlich eine erste Einschätzung zu den Kosten Ihres Projekts erhalten. Aktuell noch in Arbeit.",
-    "ctaHome": "Zurück zur Startseite",
-    "ctaContact": "Direkt per E-Mail anfragen",
-    "metaTitle": "Projektkosten-Rechner (bald verfügbar) — Danil Kurmayev",
-    "metaDescription": "Der Projektkosten-Rechner befindet sich aktuell im Aufbau."
+    "title": "Projekt-Checkliste",
+    "subtitle": "Damit Ihr Angebot zu Ihrem Projekt passt",
+    "description": "Kreuzen Sie an, was Sie brauchen. Dauer ca. 5 Minuten.",
+    "disclaimer": "Diese Liste enthält keine Preise und ist kein Vertrag. Sie dient allein der Klärung des Umfangs.",
+    "progress": "Schritt {current} von {total}",
+    "back": "Zurück",
+    "next": "Weiter",
+    "moreStepsSoon": "Die weiteren Schritte sind in Arbeit und folgen in Kürze.",
+    "steps": {
+      "goals": {
+        "title": "Was soll entstehen?",
+        "description": "Mehrfachauswahl möglich.",
+        "errors": {
+          "required": "Bitte wählen Sie mindestens eine Option."
+        },
+        "options": {
+          "newWebsite": {
+            "label": "Neue Website",
+            "description": "Firmenwebsite, Landingpage oder Visitenkarte im Netz"
+          },
+          "websiteRelaunch": {
+            "label": "Bestehende Website überarbeiten",
+            "description": "Technik, Gestaltung und mobile Darstellung erneuern"
+          },
+          "telegramBot": {
+            "label": "Telegram-Bot",
+            "description": "Anfragen, Terminbuchung oder Abläufe direkt im Messenger"
+          },
+          "webApp": {
+            "label": "Webanwendung / Portal",
+            "description": "Eigene Anwendung mit Login, Datenbank und Verwaltungsbereich"
+          }
+        }
+      },
+      "scope": {
+        "title": "Website · Umfang",
+        "description": "Ein Abschnitt ist ein inhaltlicher Block auf der Seite, etwa „Über uns“ oder „Leistungen“.",
+        "fields": {
+          "pageCount": "Anzahl Unterseiten",
+          "languageCount": "Anzahl Sprachen",
+          "additionalSections": "Zusätzliche Abschnitte"
+        }
+      },
+      "blocks": {
+        "title": "Website · Bausteine",
+        "options": {
+          "block-hero-startbereich": {
+            "label": "Auffälliger Startbereich",
+            "description": "Großes Bild oder Video, Kernaussage, Handlungsaufforderung"
+          },
+          "block-services-overview": {
+            "label": "Leistungsübersicht",
+            "description": "Was Sie anbieten, als Karten oder Liste"
+          },
+          "block-testimonials": {
+            "label": "Referenzen oder Kundenstimmen"
+          },
+          "block-gallery": {
+            "label": "Bildergalerie / Projekte",
+            "description": "Mit Vergrößerung beim Anklicken"
+          },
+          "block-before-after": {
+            "label": "Vorher-Nachher-Vergleich",
+            "description": "Schieberegler über zwei Bilder"
+          },
+          "block-team": {
+            "label": "Team",
+            "description": "Mitarbeiter mit Bild und Funktion"
+          },
+          "block-process-steps": {
+            "label": "Ablauf in Schritten",
+            "description": "„So arbeiten wir“ – Schritt 1 bis 4"
+          },
+          "block-pricing-overview": {
+            "label": "Preis- oder Tarifübersicht"
+          },
+          "block-faq": {
+            "label": "Häufige Fragen",
+            "description": "Aufklappbare Antworten"
+          },
+          "block-map": {
+            "label": "Karte mit Standort"
+          },
+          "block-partner-logos": {
+            "label": "Partner oder Lieferanten",
+            "description": "Logoleiste"
+          },
+          "block-scroll-animations": {
+            "label": "Animationen beim Scrollen",
+            "description": "Inhalte blenden sich beim Herunterscrollen ein"
+          },
+          "block-hero-video": {
+            "label": "Video im Startbereich"
+          }
+        }
+      }
+    }
   }
 }

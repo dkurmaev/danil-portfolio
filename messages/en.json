@@ -40,6 +40,12 @@
     "eyebrow": "Fullstack & Product Developer",
     "titleLine1": "From an idea to a working",
     "titleLine2": "digital product.",
+    "titleMobileLine1": "From an idea to",
+    "titleMobileLine2": "a working",
+    "titleMobileLine3": "digital product.",
+    "descriptionMobile": "Digital products — from architecture to production.",
+    "techMobile1": "React · Next.js · NestJS",
+    "techMobile2": "Web Apps · APIs · SaaS",
     "description": "I build web applications and digital products end to end — from architecture and frontend to backend, integrations and production.",
     "techRow1": "React · Next.js · NestJS · PostgreSQL · React Native",
     "techRow2": "Web Apps · APIs · SaaS · Automation · Deployment",
@@ -390,12 +396,105 @@
     "metaDescription": "Privacy policy of Danil Kurmayev — currently in preparation."
   },
   "Checkliste": {
+    "metaTitle": "Project Checklist — Danil Kurmayev",
+    "metaDescription": "A few short steps to a first estimate of your project's cost.",
     "eyebrow": "Calculator",
-    "title": "Project Cost Calculator",
-    "description": "A calculator for getting a non-binding first estimate of your project's cost is on its way. Currently under construction.",
-    "ctaHome": "Back to homepage",
-    "ctaContact": "Ask directly by email",
-    "metaTitle": "Project Cost Calculator (coming soon) — Danil Kurmayev",
-    "metaDescription": "The project cost calculator is currently being built."
+    "title": "Project Checklist",
+    "subtitle": "So the quote actually fits your project",
+    "description": "Check off what you need. Takes about 5 minutes.",
+    "disclaimer": "This checklist contains no prices and is not a contract. It's only meant to clarify project scope.",
+    "progress": "Step {current} of {total}",
+    "back": "Back",
+    "next": "Next",
+    "moreStepsSoon": "The remaining steps are still in progress and will follow shortly.",
+    "steps": {
+      "goals": {
+        "title": "What do you want to build?",
+        "description": "Multiple selections possible.",
+        "errors": {
+          "required": "Please select at least one option."
+        },
+        "options": {
+          "newWebsite": {
+            "label": "New website",
+            "description": "A company website, landing page, or online business card"
+          },
+          "websiteRelaunch": {
+            "label": "Redesign an existing website",
+            "description": "Modernize the tech, design, and mobile experience"
+          },
+          "telegramBot": {
+            "label": "Telegram bot",
+            "description": "Handle inquiries, bookings, or workflows right inside the messenger"
+          },
+          "webApp": {
+            "label": "Web app / portal",
+            "description": "A custom application with login, database, and an admin area"
+          }
+        }
+      },
+      "scope": {
+        "title": "Website · Scope",
+        "description": "A section is a content block on the page, e.g. \"About us\" or \"Services\".",
+        "fields": {
+          "pageCount": "Number of pages",
+          "languageCount": "Number of languages",
+          "additionalSections": "Additional sections"
+        }
+      },
+      "blocks": {
+        "title": "Website · Building blocks",
+        "options": {
+          "block-hero-startbereich": {
+            "label": "Eye-catching hero section",
+            "description": "Large image or video, key message, call to action"
+          },
+          "block-services-overview": {
+            "label": "Services overview",
+            "description": "What you offer, as cards or a list"
+          },
+          "block-testimonials": {
+            "label": "Testimonials or reviews"
+          },
+          "block-gallery": {
+            "label": "Photo gallery / projects",
+            "description": "Click to enlarge"
+          },
+          "block-before-after": {
+            "label": "Before/after comparison",
+            "description": "Slider across two images"
+          },
+          "block-team": {
+            "label": "Team",
+            "description": "Team members with photo and role"
+          },
+          "block-process-steps": {
+            "label": "Step-by-step process",
+            "description": "\"How we work\" — steps 1 to 4"
+          },
+          "block-pricing-overview": {
+            "label": "Pricing overview"
+          },
+          "block-faq": {
+            "label": "FAQ",
+            "description": "Expandable answers"
+          },
+          "block-map": {
+            "label": "Map with location"
+          },
+          "block-partner-logos": {
+            "label": "Partner or supplier logos",
+            "description": "Logo strip"
+          },
+          "block-scroll-animations": {
+            "label": "Scroll animations",
+            "description": "Content fades in while scrolling"
+          },
+          "block-hero-video": {
+            "label": "Hero video"
+          }
+        }
+      }
+    }
   }
 }
