@@ -61,3 +61,11 @@ export interface EstimateResult {
   /** ±20%-Wilka um `priceByLevel.standard`, Grenzen auf Vielfache von 500 gerundet. */
   standardRange: PriceRange;
 }
+
+/** Eine Zeile der positionsweisen Aufschlüsselung, siehe `calculateLineBreakdown`. */
+export interface LineBreakdownEntry {
+  code: string;
+  quantity: number;
+  hours: number;
+  priceByLevel: Record<PricingLevel, number>;
+}

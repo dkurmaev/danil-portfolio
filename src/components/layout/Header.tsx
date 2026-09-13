@@ -39,17 +39,17 @@ export function Header() {
         <Link
           href="/"
           aria-label={tHeader('homeLabel')}
-          className="focus-visible:ring-accent focus-visible:ring-offset-bg flex items-center gap-3 rounded-sm focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:outline-none"
+          className="focus-visible:ring-accent focus-visible:ring-offset-bg flex items-center gap-2 rounded-sm focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:outline-none sm:gap-2.5 lg:gap-3"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/brand/dk-logo-mark.svg"
+            src="/brand/dk-logo-mark-blue.svg"
             alt=""
             width={52}
             height={40}
-            className="h-10 w-auto"
+            className="h-8 w-auto sm:h-9 lg:h-10"
           />
-          <span className="text-fg text-base font-semibold tracking-[-0.02em] whitespace-nowrap sm:text-lg">
+          <span className="text-fg text-[0.875rem] font-semibold tracking-[-0.02em] whitespace-nowrap sm:text-base lg:text-lg">
             {tHeader('brandName')}
           </span>
         </Link>

@@ -406,7 +406,7 @@
     "progress": "Schritt {current} von {total}",
     "back": "Zurück",
     "next": "Weiter",
-    "moreStepsSoon": "Die weiteren Schritte sind in Arbeit und folgen in Kürze.",
+    "calculateCta": "Kosten berechnen",
     "steps": {
       "goals": {
         "title": "Was soll entstehen?",
@@ -494,7 +494,287 @@
             "label": "Video im Startbereich"
           }
         }
+      },
+      "functions": {
+        "title": "Website · Funktionen",
+        "options": {
+          "feature-contact-form": {
+            "label": "Kontaktformular",
+            "description": "Anfragen kommen per E-Mail bei Ihnen an"
+          },
+          "feature-multistep-form": {
+            "label": "Mehrstufiges Anfrageformular",
+            "description": "Fragt Schritt für Schritt ab, statt alles auf einmal"
+          },
+          "feature-file-upload": {
+            "label": "Datei-Anhang im Formular",
+            "description": "Kunden können Fotos oder Pläne hochladen"
+          },
+          "feature-simple-calculator": {
+            "label": "Einfacher Preisrechner",
+            "description": "Wenige Eingaben, sofortiges Ergebnis"
+          },
+          "feature-multistep-calculator": {
+            "label": "Mehrstufiger Rechner / Konfigurator",
+            "description": "Mehrere Schritte mit Auswahlpfaden"
+          },
+          "feature-online-booking": {
+            "label": "Online-Terminbuchung",
+            "description": "Kunden buchen freie Zeiten selbst"
+          },
+          "feature-telegram-notification": {
+            "label": "Sofortbenachrichtigung per Telegram",
+            "description": "Jede Anfrage kommt als Nachricht aufs Handy"
+          },
+          "feature-whatsapp-button": {
+            "label": "WhatsApp-Schaltfläche"
+          },
+          "feature-newsletter-signup": {
+            "label": "Newsletter-Anmeldung"
+          },
+          "feature-google-reviews": {
+            "label": "Google-Bewertungen anzeigen"
+          },
+          "feature-social-feed": {
+            "label": "Instagram- oder Facebook-Feed"
+          }
+        }
+      },
+      "visibility": {
+        "title": "Sichtbarkeit, Recht und Auswertung",
+        "description": "Die ersten drei Punkte empfehle ich praktisch immer.",
+        "options": {
+          "seo-technical": {
+            "label": "Technische Suchmaschinen-Optimierung",
+            "description": "Damit Google die Seite sauber lesen und einordnen kann"
+          },
+          "seo-structured-data": {
+            "label": "Strukturierte Firmendaten",
+            "description": "Öffnungszeiten, Adresse und Leistungen maschinenlesbar"
+          },
+          "legal-cookie-banner": {
+            "label": "Cookie-Banner und Einwilligungen",
+            "description": "Erforderlich, sobald Analyse oder Werbung eingesetzt wird"
+          },
+          "analytics-setup": {
+            "label": "Besucherauswertung einrichten",
+            "description": "Google Analytics und Vorbereitung für Werbeanzeigen"
+          },
+          "google-business-profile": {
+            "label": "Google-Unternehmensprofil einrichten",
+            "description": "Der Eintrag in der Google-Suche und auf Maps"
+          },
+          "accessibility-check": {
+            "label": "Barrierefreiheit prüfen",
+            "description": "Kurzprüfung nach WCAG 2.1 AA"
+          },
+          "accessibility-full": {
+            "label": "Barrierefreiheit vollständig umsetzen",
+            "description": "Für Angebote, die unter das Barrierefreiheitsstärkungsgesetz fallen"
+          }
+        }
+      },
+      "telegram": {
+        "title": "Telegram-Bot",
+        "options": {
+          "bot-setup": {
+            "label": "Bot einrichten",
+            "description": "Grundgerüst, Befehle, Betrieb – Basis für alles Weitere"
+          },
+          "bot-guided-dialog": {
+            "label": "Geführter Dialog mit Schaltflächen",
+            "description": "Der Bot stellt Fragen, der Nutzer tippt auf Antworten"
+          },
+          "bot-data-storage": {
+            "label": "Daten dauerhaft speichern",
+            "description": "Nutzer, Anfragen und Stände bleiben erhalten"
+          },
+          "bot-admin": {
+            "label": "Verwaltung im Bot",
+            "description": "Geschützte Befehle, Nutzerverwaltung, Rundnachrichten"
+          },
+          "bot-booking": {
+            "label": "Termine im Bot buchen",
+            "description": "Freie Zeiten anzeigen, buchen, Erinnerung senden"
+          },
+          "bot-payments": {
+            "label": "Bezahlen im Bot"
+          },
+          "bot-integration": {
+            "label": "Verbindung zu einem anderen System",
+            "description": "Kalender, Tabelle, Kundenverwaltung"
+          },
+          "bot-mini-app": {
+            "label": "Vollständige Oberfläche im Bot",
+            "description": "Eine kleine App, die innerhalb von Telegram läuft"
+          },
+          "bot-hosting": {
+            "label": "Laufender Betrieb des Bots",
+            "description": "Monatlich – ein Bot muss dauerhaft irgendwo laufen"
+          }
+        },
+        "autoMessageCount": {
+          "label": "Automatische Nachrichten",
+          "description": "Geplant oder bei bestimmten Ereignissen"
+        }
+      },
+      "webapp": {
+        "title": "Webanwendung / Portal",
+        "description": "Hier steht am Anfang immer eine bezahlte Konzeptphase. Erst danach lassen sich verbindliche Preise nennen – alles andere wäre geraten.",
+        "options": {
+          "webapp-user-auth": {
+            "label": "Anmeldung für Nutzer"
+          },
+          "webapp-roles": {
+            "label": "Unterschiedliche Rollen und Rechte",
+            "description": "Zum Beispiel Verwaltung, Mitarbeiter, Kunde"
+          },
+          "webapp-admin-panel": {
+            "label": "Verwaltungsbereich",
+            "description": "Übersicht mit Auswertungen und Diagrammen"
+          },
+          "webapp-payments": {
+            "label": "Zahlungen"
+          },
+          "webapp-subscriptions": {
+            "label": "Abonnements mit wiederkehrender Zahlung"
+          },
+          "webapp-notifications": {
+            "label": "Benachrichtigungen an Nutzer",
+            "description": "E-Mail oder in der Anwendung"
+          },
+          "webapp-live-updates": {
+            "label": "Live-Aktualisierung ohne Neuladen"
+          },
+          "webapp-excel-export": {
+            "label": "Datenexport nach Excel"
+          },
+          "webapp-audit-log": {
+            "label": "Protokoll aller Änderungen",
+            "description": "Wer hat wann was geändert"
+          },
+          "webapp-data-migration": {
+            "label": "Übernahme von Daten aus einem alten System"
+          }
+        },
+        "dataDomainCount": {
+          "label": "Verwaltete Datenbereiche",
+          "description": "Kunden, Aufträge, Rechnungen … – Anzahl"
+        }
+      },
+      "existing": {
+        "title": "Was ist bereits vorhanden?",
+        "description": "Der wichtigste Abschnitt. Fehlende Inhalte sind der häufigste Grund, warum Projekte teurer werden und länger dauern. „nein“ ist völlig in Ordnung – es wird dann eingeplant.",
+        "statuses": {
+          "yes": "ja",
+          "partial": "teilweise",
+          "no": "nein"
+        },
+        "options": {
+          "texts": {
+            "label": "Fertige Texte für alle Seiten",
+            "description": "Geschrieben und freigegeben, nicht nur als Idee"
+          },
+          "photos": {
+            "label": "Eigene Fotos in guter Qualität",
+            "description": "Vom Betrieb, den Arbeiten, dem Team"
+          },
+          "logoVector": {
+            "label": "Logo als Vektordatei",
+            "description": "SVG, AI oder EPS – nicht nur als Foto oder JPG"
+          },
+          "legalDocs": {
+            "label": "Impressum und Datenschutzerklärung",
+            "description": "Vom Anwalt oder aus einem geprüften Generator"
+          },
+          "domain": {
+            "label": "Domain vorhanden",
+            "description": "Die Internetadresse, unter der die Seite läuft"
+          },
+          "hosting": {
+            "label": "Hosting vorhanden",
+            "description": "Der Ort, an dem die Website liegt"
+          },
+          "businessEmail": {
+            "label": "Geschäftliche E-Mail-Adresse",
+            "description": "info@ihrefirma.de statt einer Freemail-Adresse"
+          },
+          "googleProfile": {
+            "label": "Google-Unternehmensprofil",
+            "description": "Der Eintrag bei Google Maps und in der Suche"
+          },
+          "decisionMaker": {
+            "label": "Ansprechpartner mit Entscheidungsbefugnis",
+            "description": "Jemand, der Entwürfe freigeben darf"
+          }
+        }
+      },
+      "support": {
+        "title": "Nach dem Start",
+        "description": "Eine Website ist kein Möbelstück – Technik und Sicherheitsupdates laufen weiter. Ohne Betreuung bleibt alles auf dem Stand des Übergabetages.",
+        "options": {
+          "support-full": {
+            "label": "Monatliche Betreuung",
+            "description": "Updates, Sicherungen, Überwachung und Zeit für kleine Änderungen"
+          },
+          "support-small": {
+            "label": "Monatliche Betreuung, klein",
+            "description": "Nur Updates, Sicherungen und Erreichbarkeitsprüfung"
+          },
+          "support-biannual-check": {
+            "label": "Wartung zweimal im Jahr",
+            "description": "Sammelprüfung statt monatlicher Betreuung"
+          },
+          "none": {
+            "label": "Vorerst keine Betreuung",
+            "description": "Kann später jederzeit dazugebucht werden"
+          }
+        }
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Damit ich mich bei offenen Punkten kurz melden kann.",
+        "fields": {
+          "name": "Name",
+          "company": "Firma",
+          "email": "E-Mail",
+          "phone": "Telefon",
+          "industry": "Branche / Tätigkeit",
+          "desiredDeadline": "Wunschtermin fertig",
+          "existingWebsite": "Bestehende Website",
+          "location": "Ort / Region"
+        },
+        "errors": {
+          "name": "Bitte geben Sie Ihren Namen ein.",
+          "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+        },
+        "notesTitle": "Anmerkungen",
+        "notesFields": {
+          "importantNotes": "Was ist Ihnen besonders wichtig?",
+          "likedWebsites": "Websites, die Ihnen gefallen",
+          "otherNotes": "Sonstiges"
+        }
       }
+    },
+    "result": {
+      "title": "Geschätzte Projektkosten",
+      "loading": "Berechnung läuft …",
+      "errorTitle": "Die Berechnung ist gerade nicht möglich.",
+      "retry": "Erneut versuchen",
+      "disclaimer": "Die Berechnung ist vorläufig. Der endgültige Preis wird nach Klärung der Anforderungen und des Projektumfangs festgelegt.",
+      "backCta": "Zurück zu Kontakt",
+      "sendCta": "Anfrage senden",
+      "sendPending": "Wird gesendet …",
+      "sendError": "Der Versand ist fehlgeschlagen. Bitte versuchen Sie es später erneut.",
+      "successTitle": "Anfrage erhalten",
+      "successMessage": "Vielen Dank! Ich melde mich innerhalb von {days} Werktagen bei Ihnen.",
+      "resetCta": "Neue Anfrage stellen"
+    },
+    "confirmationEmail": {
+      "subject": "Ihre Anfrage ist eingegangen",
+      "greeting": "Hallo {name},",
+      "body": "vielen Dank für Ihre Anfrage über die Projekt-Checkliste. Ich melde mich innerhalb von {days} Werktagen bei Ihnen, um die nächsten Schritte zu besprechen.",
+      "signature": "Viele Grüße\nDanil Kurmayev"
     }
   }
 }

@@ -406,7 +406,7 @@
     "progress": "Step {current} of {total}",
     "back": "Back",
     "next": "Next",
-    "moreStepsSoon": "The remaining steps are still in progress and will follow shortly.",
+    "calculateCta": "Calculate cost",
     "steps": {
       "goals": {
         "title": "What do you want to build?",
@@ -494,7 +494,287 @@
             "label": "Hero video"
           }
         }
+      },
+      "functions": {
+        "title": "Website · Features",
+        "options": {
+          "feature-contact-form": {
+            "label": "Contact form",
+            "description": "Inquiries land in your inbox by email"
+          },
+          "feature-multistep-form": {
+            "label": "Multi-step inquiry form",
+            "description": "Asks step by step instead of all at once"
+          },
+          "feature-file-upload": {
+            "label": "File upload in the form",
+            "description": "Clients can upload photos or plans"
+          },
+          "feature-simple-calculator": {
+            "label": "Simple price calculator",
+            "description": "A few inputs, instant result"
+          },
+          "feature-multistep-calculator": {
+            "label": "Multi-step calculator / configurator",
+            "description": "Multiple steps with branching paths"
+          },
+          "feature-online-booking": {
+            "label": "Online appointment booking",
+            "description": "Clients book open slots themselves"
+          },
+          "feature-telegram-notification": {
+            "label": "Instant Telegram notification",
+            "description": "Every inquiry arrives as a message on your phone"
+          },
+          "feature-whatsapp-button": {
+            "label": "WhatsApp button"
+          },
+          "feature-newsletter-signup": {
+            "label": "Newsletter signup"
+          },
+          "feature-google-reviews": {
+            "label": "Show Google reviews"
+          },
+          "feature-social-feed": {
+            "label": "Instagram or Facebook feed"
+          }
+        }
+      },
+      "visibility": {
+        "title": "Visibility, Legal & Analytics",
+        "description": "I recommend the first three almost always.",
+        "options": {
+          "seo-technical": {
+            "label": "Technical search engine optimization",
+            "description": "So Google can read and rank the site cleanly"
+          },
+          "seo-structured-data": {
+            "label": "Structured business data",
+            "description": "Opening hours, address, and services made machine-readable"
+          },
+          "legal-cookie-banner": {
+            "label": "Cookie banner and consent",
+            "description": "Required as soon as analytics or ads are in use"
+          },
+          "analytics-setup": {
+            "label": "Set up visitor analytics",
+            "description": "Google Analytics plus groundwork for ad campaigns"
+          },
+          "google-business-profile": {
+            "label": "Set up Google Business Profile",
+            "description": "Your listing in Google Search and Maps"
+          },
+          "accessibility-check": {
+            "label": "Accessibility check",
+            "description": "Quick check against WCAG 2.1 AA"
+          },
+          "accessibility-full": {
+            "label": "Full accessibility implementation",
+            "description": "For offers covered by the German Accessibility Strengthening Act"
+          }
+        }
+      },
+      "telegram": {
+        "title": "Telegram bot",
+        "options": {
+          "bot-setup": {
+            "label": "Set up the bot",
+            "description": "Foundation, commands, hosting — the basis for everything else"
+          },
+          "bot-guided-dialog": {
+            "label": "Guided dialog with buttons",
+            "description": "The bot asks questions, the user taps to answer"
+          },
+          "bot-data-storage": {
+            "label": "Persistent data storage",
+            "description": "Users, requests, and states are kept"
+          },
+          "bot-admin": {
+            "label": "Admin controls in the bot",
+            "description": "Protected commands, user management, broadcasts"
+          },
+          "bot-booking": {
+            "label": "Book appointments in the bot",
+            "description": "Show open slots, book, send reminders"
+          },
+          "bot-payments": {
+            "label": "Payments in the bot"
+          },
+          "bot-integration": {
+            "label": "Connection to another system",
+            "description": "Calendar, spreadsheet, CRM"
+          },
+          "bot-mini-app": {
+            "label": "Full interface inside the bot",
+            "description": "A small app that runs inside Telegram"
+          },
+          "bot-hosting": {
+            "label": "Ongoing bot operation",
+            "description": "Monthly — a bot has to run somewhere permanently"
+          }
+        },
+        "autoMessageCount": {
+          "label": "Automated messages",
+          "description": "Scheduled or triggered by specific events"
+        }
+      },
+      "webapp": {
+        "title": "Web app / Portal",
+        "description": "This always starts with a paid concept phase. Only after that can binding prices be given — anything else would be guesswork.",
+        "options": {
+          "webapp-user-auth": {
+            "label": "User login"
+          },
+          "webapp-roles": {
+            "label": "Different roles and permissions",
+            "description": "For example admin, staff, customer"
+          },
+          "webapp-admin-panel": {
+            "label": "Admin area",
+            "description": "Overview with analytics and charts"
+          },
+          "webapp-payments": {
+            "label": "Payments"
+          },
+          "webapp-subscriptions": {
+            "label": "Subscriptions with recurring billing"
+          },
+          "webapp-notifications": {
+            "label": "Notifications to users",
+            "description": "By email or inside the app"
+          },
+          "webapp-live-updates": {
+            "label": "Live updates without reloading"
+          },
+          "webapp-excel-export": {
+            "label": "Excel data export"
+          },
+          "webapp-audit-log": {
+            "label": "Change log",
+            "description": "Who changed what and when"
+          },
+          "webapp-data-migration": {
+            "label": "Data migration from an old system"
+          }
+        },
+        "dataDomainCount": {
+          "label": "Managed data domains",
+          "description": "Customers, orders, invoices … — count"
+        }
+      },
+      "existing": {
+        "title": "What do you already have?",
+        "description": "The most important section. Missing content is the most common reason projects get more expensive and take longer. \"No\" is completely fine — it just gets planned in.",
+        "statuses": {
+          "yes": "Yes",
+          "partial": "Partially",
+          "no": "No"
+        },
+        "options": {
+          "texts": {
+            "label": "Finished copy for all pages",
+            "description": "Written and approved, not just an idea"
+          },
+          "photos": {
+            "label": "Own photos in good quality",
+            "description": "From the business, the work, the team"
+          },
+          "logoVector": {
+            "label": "Logo as a vector file",
+            "description": "SVG, AI, or EPS — not just a photo or JPG"
+          },
+          "legalDocs": {
+            "label": "Legal notice and privacy policy",
+            "description": "From a lawyer or a vetted generator"
+          },
+          "domain": {
+            "label": "Domain in place",
+            "description": "The web address the site will run on"
+          },
+          "hosting": {
+            "label": "Hosting in place",
+            "description": "Where the website will live"
+          },
+          "businessEmail": {
+            "label": "Business email address",
+            "description": "info@yourcompany.com instead of a free-mail address"
+          },
+          "googleProfile": {
+            "label": "Google Business Profile",
+            "description": "The listing on Google Maps and in Search"
+          },
+          "decisionMaker": {
+            "label": "A contact with decision authority",
+            "description": "Someone who can approve drafts"
+          }
+        }
+      },
+      "support": {
+        "title": "After launch",
+        "description": "A website isn't a piece of furniture — tech and security updates keep going. Without ongoing care, everything stays frozen at handover-day state.",
+        "options": {
+          "support-full": {
+            "label": "Monthly care",
+            "description": "Updates, backups, monitoring, and time for small changes"
+          },
+          "support-small": {
+            "label": "Monthly care, small",
+            "description": "Just updates, backups, and an uptime check"
+          },
+          "support-biannual-check": {
+            "label": "Maintenance twice a year",
+            "description": "A batched check instead of monthly care"
+          },
+          "none": {
+            "label": "No care for now",
+            "description": "Can be added anytime later"
+          }
+        }
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "So I can reach out about anything still open.",
+        "fields": {
+          "name": "Name",
+          "company": "Company",
+          "email": "Email",
+          "phone": "Phone",
+          "industry": "Industry / role",
+          "desiredDeadline": "Desired completion date",
+          "existingWebsite": "Existing website",
+          "location": "Location / region"
+        },
+        "errors": {
+          "name": "Please enter your name.",
+          "email": "Please enter a valid email address."
+        },
+        "notesTitle": "Notes",
+        "notesFields": {
+          "importantNotes": "What matters most to you?",
+          "likedWebsites": "Websites you like",
+          "otherNotes": "Anything else"
+        }
       }
+    },
+    "result": {
+      "title": "Estimated project cost",
+      "loading": "Calculating…",
+      "errorTitle": "The estimate isn't available right now.",
+      "retry": "Try again",
+      "disclaimer": "This estimate is preliminary. The final price is set once requirements and scope have been clarified.",
+      "backCta": "Back to contact",
+      "sendCta": "Send request",
+      "sendPending": "Sending…",
+      "sendError": "Sending failed. Please try again later.",
+      "successTitle": "Request received",
+      "successMessage": "Thank you! I'll get back to you within {days} business days.",
+      "resetCta": "Start a new inquiry"
+    },
+    "confirmationEmail": {
+      "subject": "Your request has been received",
+      "greeting": "Hi {name},",
+      "body": "thank you for your request via the project checklist. I'll get back to you within {days} business days to discuss the next steps.",
+      "signature": "Best regards\nDanil Kurmayev"
     }
   }
 }

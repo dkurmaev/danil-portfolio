@@ -2,6 +2,7 @@ import 'server-only';
 
 import type {
   Katalog,
+  LineBreakdownEntry,
   PriceRange,
   PricingLevel,
   SelectionLine,
@@ -36,7 +37,10 @@ function ceilToStep(value: number, step: number): number {
  * enthaltenen Positionen abzüglich `discountHours` (siehe §2 "Rundung der
  * Wilka" / "Pakete günstiger als Summe der Positionen").
  */
-function resolveLineHours(katalog: Katalog, line: SelectionLine): number {
+export function resolveLineHours(
+  katalog: Katalog,
+  line: SelectionLine,
+): number {
   const item = katalog.items.find((entry) => entry.code === line.code);
   if (item) {
     return item.hours * line.quantity;
@@ -108,4 +112,30 @@ export function calculateEstimate(
     priceByLevel,
     standardRange: buildStandardRange(priceByLevel.standard),
   };
+}
+
+/**
+ * Positionsweise Aufschlüsselung (Stunden + Preis je Stufe) für das interne
+ * Angebot per E-Mail (`checklistEmail.ts`) — verlässt den Server nie in
+ * dieser Form, siehe CLAUDE.md §4 "Ценовые данные".
+ */
+export function calculateLineBreakdown(
+  katalog: Katalog,
+  selection: SelectionLine[],
+): LineBreakdownEntry[] {
+  const levels = Object.keys(katalog.levelMultipliers) as PricingLevel[];
+
+  return selection.map((line) => {
+    const hours = resolveLineHours(katalog, line);
+    const priceByLevel = Object.fromEntries(
+      levels.map((level) => [
+        level,
+        Math.round(
+          hours * katalog.hourlyRate * katalog.levelMultipliers[level],
+        ),
+      ]),
+    ) as Record<PricingLevel, number>;
+
+    return { code: line.code, quantity: line.quantity, hours, priceByLevel };
+  });
 }

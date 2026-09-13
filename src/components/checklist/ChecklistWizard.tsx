@@ -16,24 +16,39 @@ import {
 import { checklistSteps, type ChecklistStepId } from '@/lib/checklistSteps';
 
 import { StepBlocks } from './steps/StepBlocks';
+import { StepContact } from './steps/StepContact';
+import { StepExisting } from './steps/StepExisting';
+import { StepFunctions } from './steps/StepFunctions';
 import { StepGoals } from './steps/StepGoals';
 import { StepScope } from './steps/StepScope';
+import { StepSupport } from './steps/StepSupport';
+import { StepTelegram } from './steps/StepTelegram';
+import { StepVisibility } from './steps/StepVisibility';
+import { StepWebapp } from './steps/StepWebapp';
 import { ChecklistProgress } from './ChecklistProgress';
+import { ChecklistResult } from './ChecklistResult';
+
+type WizardPhase = 'form' | 'result';
 
 /**
- * Nur Schritte 1–3 sind gebaut (Block G2, erster Durchgang) — siehe
- * `checklistSteps.ts`. Schritte 4–7 folgen im nächsten Durchgang, deshalb
- * ist "Weiter" auf dem letzten verfügbaren Schritt bewusst deaktiviert statt
- * ins Leere zu führen (honest stub, wie schon "View certificates" in Block E).
+ * Alle 10 Schritte aus `checklistSteps.ts` sind gebaut. "Weiter" auf dem
+ * letzten Schritt ("contact") validiert wie jeder andere Schritt und
+ * wechselt danach in die `result`-Phase (Wilka + Versand,
+ * `ChecklistResult.tsx`) statt zu blockieren.
  */
 export function ChecklistWizard() {
   const t = useTranslations('Checkliste');
   const [currentStepId, setCurrentStepId] = useState<ChecklistStepId>('goals');
+  const [phase, setPhase] = useState<WizardPhase>('form');
+  const [submissionValues, setSubmissionValues] =
+    useState<ChecklistFormValues | null>(null);
 
   const {
     register,
     control,
     trigger,
+    getValues,
+    reset,
     formState: { errors },
   } = useForm<ChecklistFormValues>({
     resolver: zodResolver(checklistFormSchema),
@@ -51,6 +66,7 @@ export function ChecklistWizard() {
   );
   const currentStep = visibleSteps[currentIndex];
   const isLastStep = currentIndex === visibleSteps.length - 1;
+  const nextLabel = isLastStep ? t('calculateCta') : t('next');
 
   const goToPrevious = () => {
     if (currentIndex > 0) {
@@ -64,8 +80,32 @@ export function ChecklistWizard() {
 
     if (currentIndex < visibleSteps.length - 1) {
       setCurrentStepId(visibleSteps[currentIndex + 1].id);
+      return;
     }
+
+    // Letzter Schritt ("contact") validiert erfolgreich → Ergebnis-Screen.
+    setSubmissionValues(getValues());
+    setPhase('result');
   };
+
+  const handleReset = () => {
+    reset(checklistFormDefaultValues);
+    setSubmissionValues(null);
+    setPhase('form');
+    setCurrentStepId('goals');
+  };
+
+  if (phase === 'result' && submissionValues) {
+    return (
+      <Card className="p-6 sm:p-8">
+        <ChecklistResult
+          values={submissionValues}
+          onEdit={() => setPhase('form')}
+          onReset={handleReset}
+        />
+      </Card>
+    );
+  }
 
   return (
     <Card className="p-6 sm:p-8">
@@ -84,6 +124,21 @@ export function ChecklistWizard() {
         )}
         {currentStep.id === 'scope' && <StepScope register={register} />}
         {currentStep.id === 'blocks' && <StepBlocks control={control} />}
+        {currentStep.id === 'functions' && <StepFunctions control={control} />}
+        {currentStep.id === 'visibility' && (
+          <StepVisibility control={control} />
+        )}
+        {currentStep.id === 'telegram' && (
+          <StepTelegram control={control} register={register} />
+        )}
+        {currentStep.id === 'webapp' && (
+          <StepWebapp control={control} register={register} />
+        )}
+        {currentStep.id === 'existing' && <StepExisting register={register} />}
+        {currentStep.id === 'support' && <StepSupport register={register} />}
+        {currentStep.id === 'contact' && (
+          <StepContact register={register} errors={errors} />
+        )}
       </div>
 
       <div className="border-border mt-8 flex flex-col gap-3 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
@@ -97,15 +152,10 @@ export function ChecklistWizard() {
           {t('back')}
         </Button>
 
-        <div className="flex flex-col items-end gap-2">
-          <Button type="button" onClick={goToNext} disabled={isLastStep}>
-            {t('next')}
-            <ArrowRight size={16} aria-hidden="true" />
-          </Button>
-          {isLastStep && (
-            <p className="text-fg-muted text-xs">{t('moreStepsSoon')}</p>
-          )}
-        </div>
+        <Button type="button" onClick={goToNext}>
+          {nextLabel}
+          <ArrowRight size={16} aria-hidden="true" />
+        </Button>
       </div>
     </Card>
   );

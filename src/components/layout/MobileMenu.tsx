@@ -80,16 +80,16 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       className="bg-bg fixed inset-0 isolate z-[100] flex min-h-dvh flex-col overflow-y-auto lg:hidden"
     >
       <div className="border-border flex min-h-[72px] items-center justify-between border-b px-5 pt-[env(safe-area-inset-top)] md:px-8">
-        <div className="flex min-w-0 items-center gap-3">
+        <div className="flex min-w-0 items-center gap-2 sm:gap-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/brand/dk-logo-mark.svg"
+            src="/brand/dk-logo-mark-blue.svg"
             alt=""
             width={52}
             height={40}
-            className="h-10 w-auto shrink-0"
+            className="h-8 w-auto shrink-0 sm:h-9"
           />
-          <span className="text-fg truncate text-base font-semibold tracking-[-0.02em]">
+          <span className="text-fg truncate text-[0.875rem] font-semibold tracking-[-0.02em] sm:text-base">
             {tHeader('brandName')}
           </span>
         </div>

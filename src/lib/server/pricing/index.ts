@@ -1,12 +1,17 @@
 import 'server-only';
 
 export { katalog } from './katalog';
-export { calculateEstimate, UnknownCodeError } from './calculate';
+export {
+  calculateEstimate,
+  calculateLineBreakdown,
+  UnknownCodeError,
+} from './calculate';
 export type {
   CatalogItem,
   CatalogPackage,
   EstimateResult,
   Katalog,
+  LineBreakdownEntry,
   PriceRange,
   PricingLevel,
   SelectionLine,

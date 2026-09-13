@@ -1,7 +1,11 @@
 import { describe, expect, it } from 'vitest';
 
 import fixtureKatalog from '../katalog.example.json';
-import { calculateEstimate, UnknownCodeError } from './calculate';
+import {
+  calculateEstimate,
+  calculateLineBreakdown,
+  UnknownCodeError,
+} from './calculate';
 import type { Katalog } from './types';
 
 // katalog.example.json ist committed (im Gegensatz zu katalog.json) und
@@ -116,6 +120,38 @@ describe('calculateEstimate', () => {
   it('wirft bei einem unbekannten Code', () => {
     expect(() =>
       calculateEstimate(katalog, [{ code: 'does-not-exist', quantity: 1 }]),
+    ).toThrow(UnknownCodeError);
+  });
+});
+
+describe('calculateLineBreakdown', () => {
+  it('liefert Stunden und Preis je Stufe pro Zeile, nicht nur die Summe', () => {
+    const breakdown = calculateLineBreakdown(katalog, [
+      { code: 'block-hero-startbereich', quantity: 1 }, // 2h
+      { code: 'site-page', quantity: 3 }, // 2h * 3
+    ]);
+
+    expect(breakdown).toEqual([
+      {
+        code: 'block-hero-startbereich',
+        quantity: 1,
+        hours: 2,
+        priceByLevel: { standard: 100, bekanntschaft: 70, familie: 50 },
+      },
+      {
+        code: 'site-page',
+        quantity: 3,
+        hours: 6,
+        priceByLevel: { standard: 300, bekanntschaft: 210, familie: 150 },
+      },
+    ]);
+  });
+
+  it('wirft bei einem unbekannten Code', () => {
+    expect(() =>
+      calculateLineBreakdown(katalog, [
+        { code: 'does-not-exist', quantity: 1 },
+      ]),
     ).toThrow(UnknownCodeError);
   });
 });
