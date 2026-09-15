@@ -24,14 +24,31 @@ export function Hero() {
       id="hero"
       className="border-border bg-bg relative isolate scroll-mt-[72px] overflow-hidden border-b lg:min-h-[calc(100svh-5rem)] lg:scroll-mt-20"
     >
-      <Image
-        src="/brand/portfolio-hero-background.png"
-        alt=""
-        fill
-        priority
-        sizes={BACKGROUND_SIZES}
-        className="-z-20 object-cover object-[64%_center] opacity-70 lg:object-center lg:opacity-100"
-      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-0 right-0 -z-20 hidden h-[58%] w-[40%] overflow-hidden opacity-[0.90] lg:block"
+      >
+        <Image
+          src="/brand/about_back_comp.png"
+          alt=""
+          fill
+          sizes="40vw"
+          className="[mask-image:linear-gradient(to_bottom_left,black_0%,black_22%,transparent_75%)] object-cover object-right-top [-webkit-mask-image:linear-gradient(to_bottom_left,black_0%,black_22%,transparent_75%)]"
+        />
+      </div>
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 -z-20 h-[56svh] overflow-hidden opacity-[0.70] lg:h-[44svh]"
+      >
+        <Image
+          src="/brand/background_about_code.png"
+          alt=""
+          fill
+          sizes={BACKGROUND_SIZES}
+          className="[mask-image:linear-gradient(to_top,black_0%,black_35%,transparent_100%)] object-cover object-left-bottom [-webkit-mask-image:linear-gradient(to_top,black_0%,black_35%,transparent_100%)]"
+        />
+      </div>
 
       <div
         aria-hidden="true"
@@ -69,7 +86,7 @@ export function Hero() {
 
           <div className="relative -mt-5 h-[285px] sm:mt-7 sm:h-[360px] lg:static lg:h-auto">
             <HeroReveal
-              className="absolute -top-20 right-[-38%] z-0 w-[116%] sm:right-[-5%] sm:w-[62%] lg:top-auto lg:right-[-3%] lg:bottom-0 lg:w-[48%] xl:right-[-4%]"
+              className="absolute -top-20 right-[-38%] z-0 w-[116%] sm:right-[-5%] sm:w-[62%] lg:top-auto lg:right-[-3%] lg:bottom-0 lg:w-[48%] xl:right-[-1%]"
               delay={0.08}
               direction="right"
             >
