@@ -29,7 +29,7 @@ export function Hero() {
         className="pointer-events-none absolute top-0 right-0 -z-20 hidden h-[58%] w-[40%] overflow-hidden opacity-[0.90] lg:block"
       >
         <Image
-          src="/brand/about_back_comp.png"
+          src="/brand/about_back_comp.webp"
           alt=""
           fill
           sizes="40vw"
@@ -42,7 +42,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 -z-20 h-[56svh] overflow-hidden opacity-[0.70] lg:h-[44svh]"
       >
         <Image
-          src="/brand/background_about_code.png"
+          src="/brand/background_about_code.webp"
           alt=""
           fill
           sizes={BACKGROUND_SIZES}
@@ -91,7 +91,7 @@ export function Hero() {
               direction="right"
             >
               <Image
-                src="/brand/danil-portrait-transparent.png"
+                src="/brand/danil-portrait-transparent.webp"
                 alt={t('portraitAlt')}
                 width={1368}
                 height={1149}

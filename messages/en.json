@@ -58,61 +58,84 @@
   "About": {
     "eyebrow": "About / Profile",
     "title": "About Me",
-    "headlineLine1": "Technical thinking",
-    "headlineLine2": "Products with substance",
+    "headlineLine1": "Technical background",
+    "headlineLine2": "Digital products today",
     "paragraphs": [
-      "I'm a Fullstack / Product Developer with a technical background and an engineering education, complemented by a professional qualification in Fullstack development.",
-      "I work on my own products as well as commercial projects for clients — from the initial idea and architecture through to running them in production.",
-      "I'm based in Berlin and build with modern technologies across web, automation and AI integrations."
+      "My journey with technology started in childhood — first with an Elektronika computer, later with a home 386 and my first programs in BASIC. Those early experiences shaped my curiosity for computers and for understanding how systems actually work.",
+      "My engineering education in automation, telemechanics and communications deepened that foundation: understand connections, look for causes instead of symptoms, and think about solutions as complete systems.",
+      "Today I apply that experience to web applications, APIs, automation and my own digital products — from idea and architecture to interface, backend and a working solution in production."
     ],
+    "statement": "Technology makes the possible simpler.",
+    "portraitAlt": "Danil Kurmayev in a technical sketch composition",
+    "timelineAriaLabel": "Technical journey",
+    "timelineNote": "Better products for tomorrow.",
+    "timeline": {
+      "early": {
+        "title": "1980s · Elektronika",
+        "description": "First steps into the digital world."
+      },
+      "basic": {
+        "title": "1990s · 386 + BASIC",
+        "description": "Learning to program. Thinking logically. Understanding systems."
+      },
+      "today": {
+        "title": "Today · Web · SaaS · AI",
+        "description": "Digital products from idea to production."
+      }
+    },
     "cards": {
       "location": {
         "label": "Location",
-        "value": "Berlin, Germany"
+        "value": "Berlin, Germany",
+        "caption": "Based in Europe"
       },
       "role": {
         "label": "Role",
-        "value": "Fullstack / Product Developer"
+        "value": "Fullstack / Product Developer",
+        "caption": "Ideas · Code · Products"
       },
       "focus": {
         "label": "Focus",
-        "value": "Web · SaaS · Automation · AI"
+        "value": "Web · SaaS · Automation · AI",
+        "caption": "Technology for real solutions"
       },
       "languages": {
         "label": "Languages",
-        "value": "German · English · Russian"
+        "value": "DE / EN / RU",
+        "caption": "Languages that connect"
       }
     }
   },
   "TechStack": {
-    "eyebrow": "Technology",
-    "title": "Stack",
-    "headline": "Tools for complete products",
-    "description": "A carefully selected technology foundation for building scalable web and mobile applications – from the first idea to production.",
-    "core": {
-      "react": "UI · Components · Web",
-      "reactNative": "Mobile · Native · Everywhere",
-      "nextjs": "Web · SSR · Scale",
-      "postgresql": "Data · Reliable · Scalable",
-      "nestjs": "API · Logic · Systems"
-    },
-    "flowStart": "Ideas into products",
-    "flowEnd": "Scalable solutions",
-    "foundation": "Solid foundation",
-    "process": "Build / Connect / Scale",
+    "eyebrow": "Tech Stack / Technology",
+    "headlineLine1": "Tools for",
+    "headlineLine2": "complete products",
+    "description": "I combine modern technologies into scalable web and mobile applications, APIs and digital products — from the first idea to production.",
+    "architectureAriaLabel": "Technical architecture for complete digital products",
+    "architectureTagline": "Ideas\nArchitecture\nTechnologies\nReal Impact",
+    "flowStart": "From idea to product",
+    "flowEnd": "Scalable · reliable · production-ready",
+    "process": "Build / Integrate / Deploy",
     "categories": {
       "frontend": "Frontend",
       "mobile": "Mobile",
-      "backend": "Backend",
-      "database": "Database",
+      "backend": "Backend / API",
+      "database": "Data",
       "infrastructure": "Infrastructure",
-      "services": "Services & APIs",
-      "tools": "Tools",
-      "design": "Design"
+      "services": "Integrations & Services"
     },
-    "outroLeft": "Technology drives opportunity",
-    "outroRight": "For a brighter tomorrow"
+    "categoryDescriptions": {
+      "frontend": "Modern, performant and accessible user interfaces.",
+      "mobile": "Cross-platform applications for mobile products.",
+      "backend": "Robust APIs, business logic and server-side systems.",
+      "database": "Persistence, data models, caching and reliable access.",
+      "infrastructure": "Deployment, automation and production operations.",
+      "services": "External services for AI, payments, communication and platform APIs."
+    },
+    "outroLeft": "Technology turns ideas into products",
+    "outroRight": "Build · Integrate · Deploy"
   },
+
   "Projects": {
     "eyebrow": "Work",
     "selection": "Selection",
@@ -379,9 +402,18 @@
     "intro": "This page is currently being prepared. The full privacy policy will follow shortly.",
     "back": "Back to homepage",
     "sections": {
-      "controller": { "title": "Data Controller", "body": "Coming soon." },
-      "hosting": { "title": "Hosting", "body": "Coming soon." },
-      "contactForm": { "title": "Contact Form", "body": "Coming soon." },
+      "controller": {
+        "title": "Data Controller",
+        "body": "Coming soon."
+      },
+      "hosting": {
+        "title": "Hosting",
+        "body": "Coming soon."
+      },
+      "contactForm": {
+        "title": "Contact Form",
+        "body": "Coming soon."
+      },
       "cookiesAnalytics": {
         "title": "Cookies & Analytics",
         "body": "Coming soon."
@@ -390,7 +422,10 @@
         "title": "External Services",
         "body": "Coming soon."
       },
-      "rights": { "title": "Your Rights", "body": "Coming soon." }
+      "rights": {
+        "title": "Your Rights",
+        "body": "Coming soon."
+      }
     },
     "metaTitle": "Privacy Policy — Danil Kurmayev",
     "metaDescription": "Privacy policy of Danil Kurmayev — currently in preparation."

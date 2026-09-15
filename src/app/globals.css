@@ -27,6 +27,7 @@
   /* Typography */
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-script: var(--font-caveat), cursive;
 
   /* Radius */
   --radius-chip: 9px;

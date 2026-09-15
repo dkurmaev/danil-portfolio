@@ -37,3 +37,6 @@ next-env.d.ts
 
 # editor
 .idea
+
+# original PNGs kept locally after webp conversion, not in the repo
+/docs/source-images

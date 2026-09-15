@@ -58,61 +58,84 @@
   "About": {
     "eyebrow": "About / Über mich",
     "title": "Über mich",
-    "headlineLine1": "Technisches Denken",
-    "headlineLine2": "Produkte mit Substanz",
+    "headlineLine1": "Technischer Hintergrund",
+    "headlineLine2": "Digitale Produkte heute",
     "paragraphs": [
-      "Ich bin Fullstack- und Product Developer mit technischem Hintergrund und einer ingenieurwissenschaftlichen Ausbildung, ergänzt durch eine professionelle Qualifikation in der Fullstack-Entwicklung.",
-      "Ich arbeite an eigenen Produkten und an kommerziellen Projekten für Kunden – von der ersten Idee über die Architektur bis zum laufenden Betrieb in Produktion.",
-      "Ich lebe und arbeite in Berlin und entwickle mit modernen Technologien für Web, Automatisierung und KI-Integrationen."
+      "Meine Reise mit Technik begann schon in der Kindheit — zunächst mit einem „Elektronika“-Rechner, später mit einem eigenen 386er und den ersten Programmen in BASIC. Diese frühen Erfahrungen haben meine Neugier für Computer und die Funktionsweise von Systemen nachhaltig geprägt.",
+      "Mein Ingenieurstudium mit Schwerpunkt Automatisierung, Telemechanik und Kommunikation hat dieses Fundament vertieft: Zusammenhänge verstehen, Ursachen statt Symptome suchen und Lösungen als Ganzes denken.",
+      "Heute nutze ich diese Erfahrung für Webanwendungen, APIs, Automatisierung und eigene digitale Produkte — von Idee und Architektur über Interface und Backend bis zu einer funktionierenden Lösung im produktiven Betrieb."
     ],
+    "statement": "Technologie macht Mögliches einfacher.",
+    "portraitAlt": "Danil Kurmayev in einer technischen Skizzenkomposition",
+    "timelineAriaLabel": "Technischer Weg",
+    "timelineNote": "Bessere Produkte für morgen.",
+    "timeline": {
+      "early": {
+        "title": "1980er · Elektronika",
+        "description": "Die ersten Schritte in die digitale Welt."
+      },
+      "basic": {
+        "title": "1990er · 386 + BASIC",
+        "description": "Programmieren lernen. Logisch denken. Systeme verstehen."
+      },
+      "today": {
+        "title": "Heute · Web · SaaS · KI",
+        "description": "Digitale Produkte von der Idee bis zum produktiven Betrieb."
+      }
+    },
     "cards": {
       "location": {
         "label": "Standort",
-        "value": "Berlin, Deutschland"
+        "value": "Berlin, Deutschland",
+        "caption": "Zuhause in Europa"
       },
       "role": {
         "label": "Rolle",
-        "value": "Fullstack / Product Developer"
+        "value": "Fullstack / Product Developer",
+        "caption": "Ideen · Code · Produkte"
       },
       "focus": {
         "label": "Fokus",
-        "value": "Web · SaaS · Automatisierung · KI"
+        "value": "Web · SaaS · Automatisierung · KI",
+        "caption": "Technologie für echte Lösungen"
       },
       "languages": {
         "label": "Sprachen",
-        "value": "Deutsch · Englisch · Russisch"
+        "value": "DE / EN / RU",
+        "caption": "Sprachen, die verbinden"
       }
     }
   },
   "TechStack": {
-    "eyebrow": "Technologie",
-    "title": "Stack",
-    "headline": "Werkzeuge für vollständige Produkte",
-    "description": "Eine sorgfältig ausgewählte Technologie-Basis, mit der ich skalierbare Web- und Mobile-Anwendungen entwickle – von der Idee bis in die Produktion.",
-    "core": {
-      "react": "UI · Components · Web",
-      "reactNative": "Mobile · Native · Everywhere",
-      "nextjs": "Web · SSR · Scale",
-      "postgresql": "Data · Reliable · Scalable",
-      "nestjs": "API · Logic · Systems"
-    },
-    "flowStart": "Ideen in Produkte",
-    "flowEnd": "Skalierbare Lösungen",
-    "foundation": "Solides Fundament",
-    "process": "Build / Connect / Scale",
+    "eyebrow": "Tech Stack / Technologie",
+    "headlineLine1": "Werkzeuge für",
+    "headlineLine2": "vollständige Produkte",
+    "description": "Ich kombiniere moderne Technologien zu skalierbaren Web- und Mobile-Anwendungen, APIs und digitalen Produkten – von der Idee bis zum produktiven Betrieb.",
+    "architectureAriaLabel": "Technische Architektur für vollständige digitale Produkte",
+    "architectureTagline": "Ideas\nArchitecture\nTechnologies\nReal Impact",
+    "flowStart": "Von der Idee zum Produkt",
+    "flowEnd": "Skalierbar · zuverlässig · produktiv",
+    "process": "Build / Integrate / Deploy",
     "categories": {
       "frontend": "Frontend",
       "mobile": "Mobile",
-      "backend": "Backend",
-      "database": "Datenbanken",
+      "backend": "Backend / API",
+      "database": "Daten",
       "infrastructure": "Infrastruktur",
-      "services": "Services & APIs",
-      "tools": "Tools",
-      "design": "Design"
+      "services": "Integrationen & Services"
     },
-    "outroLeft": "Technology drives opportunity",
-    "outroRight": "For a brighter tomorrow"
+    "categoryDescriptions": {
+      "frontend": "Moderne, performante und zugängliche Benutzeroberflächen.",
+      "mobile": "Cross-Platform-Anwendungen für mobile Produkte.",
+      "backend": "Robuste APIs, Geschäftslogik und serverseitige Systeme.",
+      "database": "Persistenz, Datenmodelle, Caching und zuverlässiger Zugriff.",
+      "infrastructure": "Deployment, Automatisierung und produktiver Betrieb.",
+      "services": "Externe Dienste für KI, Zahlungen, Kommunikation und Plattform-APIs."
+    },
+    "outroLeft": "Technology turns ideas into products",
+    "outroRight": "Build · Integrate · Deploy"
   },
+
   "Projects": {
     "eyebrow": "Projekte",
     "selection": "Auswahl",
@@ -379,9 +402,18 @@
     "intro": "Diese Seite wird derzeit erstellt. Die vollständige Datenschutzerklärung folgt in Kürze.",
     "back": "Zurück zur Startseite",
     "sections": {
-      "controller": { "title": "Verantwortlicher", "body": "Wird ergänzt." },
-      "hosting": { "title": "Hosting", "body": "Wird ergänzt." },
-      "contactForm": { "title": "Kontaktformular", "body": "Wird ergänzt." },
+      "controller": {
+        "title": "Verantwortlicher",
+        "body": "Wird ergänzt."
+      },
+      "hosting": {
+        "title": "Hosting",
+        "body": "Wird ergänzt."
+      },
+      "contactForm": {
+        "title": "Kontaktformular",
+        "body": "Wird ergänzt."
+      },
       "cookiesAnalytics": {
         "title": "Cookies & Analyse",
         "body": "Wird ergänzt."
@@ -390,7 +422,10 @@
         "title": "Externe Dienste",
         "body": "Wird ergänzt."
       },
-      "rights": { "title": "Ihre Rechte", "body": "Wird ergänzt." }
+      "rights": {
+        "title": "Ihre Rechte",
+        "body": "Wird ergänzt."
+      }
     },
     "metaTitle": "Datenschutz — Danil Kurmayev",
     "metaDescription": "Datenschutzerklärung von Danil Kurmayev – aktuell in Vorbereitung."

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { JetBrains_Mono, Manrope } from 'next/font/google';
+import { Caveat, JetBrains_Mono, Manrope } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 import { siteConfig } from '@/config/site';
@@ -25,6 +25,12 @@ const manrope = Manrope({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin', 'latin-ext', 'cyrillic'],
   variable: '--font-jetbrains-mono',
+  display: 'swap',
+});
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  variable: '--font-caveat',
   display: 'swap',
 });
 
@@ -108,7 +114,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${manrope.variable} ${jetbrainsMono.variable}`}
+      className={`${manrope.variable} ${jetbrainsMono.variable} ${caveat.variable}`}
     >
       <body>
         <script
