@@ -103,7 +103,71 @@ export function About() {
         </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-[1760px] px-5 pt-6 pb-12 md:px-8 md:pt-8 lg:px-12 lg:pt-9 lg:pb-14 xl:px-16 xl:pt-10">
+      <div className="relative mx-auto w-full max-w-[1760px] px-5 pt-0 pb-12 md:px-8 md:pt-1 lg:px-12 lg:pt-2 lg:pb-14 xl:px-16 xl:pt-3">
+        {/* Facts strip */}
+        <div
+          className={[
+            'relative -mt-3 mb-14 overflow-hidden border-y border-[#6C7F93]/20 lg:-mt-4 lg:mb-16',
+            'transition-[opacity,transform] delay-500 duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]',
+            'motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:transition-none',
+            isVisible
+              ? 'translate-y-0 opacity-100'
+              : '-translate-y-4 opacity-0',
+          ].join(' ')}
+        >
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0"
+          >
+            <Image
+              src="/brand/background_about_code.webp"
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-cover object-center opacity-[0.10]"
+            />
+            <div className="bg-bg/82 absolute inset-0 backdrop-blur-[1px]" />
+          </div>
+
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            {FACT_ITEMS.map(({ key, Icon }, index) => (
+              <div
+                key={key}
+                style={{
+                  transitionDelay: prefersReducedMotion
+                    ? '0ms'
+                    : `${720 + index * 80}ms`,
+                }}
+                className={[
+                  'flex min-h-22 items-center gap-4 py-5 transition-[opacity,transform] duration-500 ease-out sm:px-6 lg:px-7',
+                  'motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:transition-none',
+                  isVisible
+                    ? 'translate-y-0 opacity-100'
+                    : 'translate-y-3 opacity-0',
+                  index > 0 ? 'border-t border-[#6C7F93]/16 sm:border-t-0' : '',
+                  index % 2 === 1 ? 'sm:border-l' : '',
+                  index > 1 ? 'sm:border-t lg:border-t-0' : '',
+                  index > 0 ? 'lg:border-l' : '',
+                ].join(' ')}
+              >
+                <Icon
+                  aria-hidden="true"
+                  className="h-5 w-5 shrink-0 stroke-[1.6] text-[#6C7F93]"
+                />
+
+                <div className="min-w-0">
+                  <p className="text-fg text-sm font-medium md:text-base">
+                    {t(`cards.${key}.value`)}
+                  </p>
+
+                  <p className="text-fg-muted mt-1 font-mono text-[9px] tracking-[0.16em] uppercase">
+                    {t(`cards.${key}.caption`)}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="grid items-start gap-9 lg:grid-cols-[minmax(300px,0.62fr)_minmax(0,1.15fr)_minmax(205px,0.32fr)] lg:gap-9 xl:grid-cols-[minmax(340px,0.6fr)_minmax(0,1.2fr)_minmax(220px,0.3fr)] xl:gap-11">
           {/* Portrait — mirrored against Hero */}
           <div className="relative z-10 order-2 flex justify-center lg:order-1 lg:block lg:self-stretch">
@@ -344,54 +408,6 @@ export function About() {
               <span aria-hidden="true">&gt;</span>
             </p>
           </aside>
-        </div>
-
-        {/* Facts strip */}
-        <div
-          className={[
-            'mt-10 border-y border-[#6C7F93]/20 transition-[opacity,transform] delay-500 duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] lg:mt-8',
-            'motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:transition-none',
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0',
-          ].join(' ')}
-        >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-            {FACT_ITEMS.map(({ key, Icon }, index) => (
-              <div
-                key={key}
-                style={{
-                  transitionDelay: prefersReducedMotion
-                    ? '0ms'
-                    : `${720 + index * 80}ms`,
-                }}
-                className={[
-                  'flex min-h-22 items-center gap-4 py-5 transition-[opacity,transform] duration-500 ease-out sm:px-6 lg:px-7',
-                  'motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:transition-none',
-                  isVisible
-                    ? 'translate-y-0 opacity-100'
-                    : 'translate-y-3 opacity-0',
-                  index > 0 ? 'border-t border-[#6C7F93]/16 sm:border-t-0' : '',
-                  index % 2 === 1 ? 'sm:border-l' : '',
-                  index > 1 ? 'sm:border-t lg:border-t-0' : '',
-                  index > 0 ? 'lg:border-l' : '',
-                ].join(' ')}
-              >
-                <Icon
-                  aria-hidden="true"
-                  className="h-5 w-5 shrink-0 stroke-[1.6] text-[#6C7F93]"
-                />
-
-                <div className="min-w-0">
-                  <p className="text-fg text-sm font-medium md:text-base">
-                    {t(`cards.${key}.value`)}
-                  </p>
-
-                  <p className="text-fg-muted mt-1 font-mono text-[9px] tracking-[0.16em] uppercase">
-                    {t(`cards.${key}.caption`)}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Mobile timeline */}

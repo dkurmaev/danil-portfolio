@@ -7,7 +7,10 @@ export type ProjectCategory =
 export type ProjectLayout = 'featured' | 'wide' | 'compact';
 
 export type ProjectRole =
-  'fullstack-product' | 'fullstack-development' | 'frontend-development';
+  | 'fullstack-product'
+  | 'fullstack-development'
+  | 'frontend-development'
+  | 'design-to-deploy';
 
 export interface Project {
   slug: string;
@@ -18,5 +21,8 @@ export interface Project {
   layout: ProjectLayout;
   stack: string[];
   cover: string;
-  caseStudyHref?: string;
+  coverPosition?: 'top' | 'left' | 'center';
+  projectHref?: string;
+  ctaLabelKey?: string;
+  previewNote?: boolean;
 }

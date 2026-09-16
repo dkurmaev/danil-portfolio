@@ -100,7 +100,7 @@ export function LanguageSwitcher({
         ref={triggerRef}
         type="button"
         onClick={() => setIsOpen((current) => !current)}
-        aria-label={t('label')}
+        aria-label={`${t('label')}: ${locale.toUpperCase()}`}
         aria-haspopup="menu"
         aria-expanded={isOpen}
         aria-controls={isOpen ? menuId : undefined}

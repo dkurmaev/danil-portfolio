@@ -57,7 +57,11 @@ export function Footer() {
 
         <div className="relative mt-10 grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4 sm:gap-x-10 lg:grid-cols-[1.6fr_1fr_1fr_1fr] xl:grid-cols-[1.6fr_1fr_1fr_1fr_auto]">
           <div className="col-span-2 flex flex-col gap-4 sm:col-span-4 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-3">
+            <Link
+              href="/"
+              aria-label={tHeader('homeLabel')}
+              className="inline-flex items-center gap-3"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/brand/dk-logo-mark.svg"
@@ -248,7 +252,7 @@ export function Footer() {
                     aria-current={loc === locale ? 'page' : undefined}
                     className={
                       loc === locale
-                        ? 'text-accent decoration-accent underline underline-offset-4'
+                        ? 'text-[#9B85FF] underline decoration-[#9B85FF] underline-offset-4'
                         : 'text-fg-inverse/70 hover:text-fg-inverse transition-colors duration-200'
                     }
                   >

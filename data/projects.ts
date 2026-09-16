@@ -2,15 +2,18 @@ import type { Project } from '@/types/projects';
 
 export const projects: Project[] = [
   {
-    slug: 'dev2lab',
-    name: 'Dev2Lab',
+    slug: 'dklab',
+    name: 'DK Lab',
     category: 'saas',
     status: 'active-development',
     role: 'fullstack-product',
     layout: 'featured',
     stack: ['React', 'NestJS', 'Prisma', 'PostgreSQL', 'Redis', 'Docker'],
-    cover: '/images/projects/dev2lab/cover.webp',
+    cover: '/images/projects/dklab/cover.webp',
+    coverPosition: 'top',
+    previewNote: true,
   },
+
   {
     slug: 'italiano-daily',
     name: 'Italiano Daily',
@@ -18,9 +21,12 @@ export const projects: Project[] = [
     status: 'active-development',
     role: 'fullstack-development',
     layout: 'wide',
-    stack: ['Node.js', 'Telegram API', 'PostgreSQL', 'OpenAI'],
+    stack: ['Node.js', 'Telegram API', 'Hetzner', 'Coolify', 'OpenAI'],
     cover: '/images/projects/italiano-daily/cover.webp',
+    projectHref: 'https://t.me/italiano_daily_bot',
+    ctaLabelKey: 'tryBotCta',
   },
+
   {
     slug: 'olidort-bedachungen',
     name: 'Olidort Bedachungen',
@@ -28,17 +34,21 @@ export const projects: Project[] = [
     status: 'production',
     role: 'fullstack-development',
     layout: 'compact',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    stack: ['Vite', 'TypeScript', 'Tailwind CSS', 'EmailJS'],
     cover: '/images/projects/olidort-bedachungen/cover.webp',
+    coverPosition: 'left',
+    projectHref: 'https://bedachungen.olidort.de/',
   },
+
   {
-    slug: 'space-burger',
-    name: 'Space Burger',
+    slug: 'spacebox-burger',
+    name: 'SpaceBox Burger',
     category: 'brand',
     status: 'commercial',
-    role: 'frontend-development',
+    role: 'design-to-deploy',
     layout: 'compact',
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Motion'],
-    cover: '/images/projects/space-burger/cover.webp',
+    stack: ['Express', 'TypeScript', 'MongoDB', 'Stripe'],
+    cover: '/images/projects/spacebox-burger/cover.webp',
+    projectHref: 'https://space-burger-six.vercel.app/',
   },
 ];

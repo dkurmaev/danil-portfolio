@@ -141,8 +141,9 @@
     "selection": "Selection",
     "headline": "Products with real substance",
     "description": "My own products and client solutions – conceived, built and supported all the way into production.",
-    "cta": "View case study",
-    "caseStudyPending": "Case study coming soon",
+    "cta": "View Project",
+    "ctaPending": "Project page coming soon",
+    "tryBotCta": "Try the Bot",
     "meta": {
       "role": "Role",
       "status": "Status",
@@ -163,13 +164,17 @@
     "roles": {
       "fullstack-product": "Fullstack & Product Development",
       "fullstack-development": "Fullstack Development",
-      "frontend-development": "Frontend Development"
+      "frontend-development": "Frontend Development",
+      "design-to-deploy": "From Figma to Deployment"
     },
     "descriptions": {
-      "dev2lab": "A developer and client platform for matching, jobs, offers and IT collaboration — built end to end as a personal SaaS product.",
+      "dklab": "A developer and client platform for matching, jobs, offers and IT collaboration — built end to end as a personal SaaS product.",
       "italiano-daily": "A Telegram bot for daily Italian practice with lessons, quizzes, streaks and AI-powered fallback.",
       "olidort-bedachungen": "A conversion-focused commercial website with a service calculator, analytics tracking and SEO, built for a real client.",
-      "space-burger": "A visually driven brand website with custom animations and a fully responsive frontend build."
+      "spacebox-burger": "A visually driven brand website with custom animations – from Figma design to live deployment."
+    },
+    "previewNotes": {
+      "dklab": "Conceptual frontend preview"
     }
   },
   "Experience": {

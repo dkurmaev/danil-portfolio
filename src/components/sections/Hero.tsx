@@ -32,6 +32,8 @@ export function Hero() {
           src="/brand/about_back_comp.webp"
           alt=""
           fill
+          loading="eager"
+          fetchPriority="low"
           sizes="40vw"
           className="[mask-image:linear-gradient(to_bottom_left,black_0%,black_22%,transparent_75%)] object-cover object-right-top [-webkit-mask-image:linear-gradient(to_bottom_left,black_0%,black_22%,transparent_75%)]"
         />
@@ -45,6 +47,8 @@ export function Hero() {
           src="/brand/background_about_code.webp"
           alt=""
           fill
+          loading="eager"
+          fetchPriority="low"
           sizes={BACKGROUND_SIZES}
           className="[mask-image:linear-gradient(to_top,black_0%,black_35%,transparent_100%)] object-cover object-left-bottom [-webkit-mask-image:linear-gradient(to_top,black_0%,black_35%,transparent_100%)]"
         />
@@ -96,6 +100,7 @@ export function Hero() {
                 width={1368}
                 height={1149}
                 priority
+                fetchPriority="high"
                 quality={95}
                 sizes={PORTRAIT_SIZES}
                 className="h-auto w-full max-w-none [mask-image:linear-gradient(to_bottom,black_0%,black_90%,transparent_100%)] object-contain object-top [filter:drop-shadow(0_13px_13px_rgba(17,19,24,0.10))] lg:ml-auto lg:h-[min(78svh,780px)] lg:w-auto lg:origin-bottom lg:scale-[1.035] lg:[mask-image:none] lg:object-bottom"
@@ -124,7 +129,7 @@ export function Hero() {
               <Button
                 href="#projects"
                 variant="primary"
-                className="w-full min-w-0 gap-1.5 bg-[#6C7F93]! px-2 text-[0.75rem] whitespace-nowrap text-white hover:bg-[#5E7186]! focus-visible:ring-[#8798A9] active:bg-[#536678]! min-[390px]:px-3 min-[390px]:text-sm"
+                className="w-full min-w-0 gap-1.5 bg-[#5E7186]! px-2 text-[0.75rem] whitespace-nowrap text-white hover:bg-[#536678]! focus-visible:ring-[#8798A9] active:bg-[#45586B]! min-[390px]:px-3 min-[390px]:text-sm"
               >
                 {t('ctaPrimary')}
                 <ArrowRight size={13} className="shrink-0" aria-hidden="true" />
@@ -158,7 +163,7 @@ export function Hero() {
             <Button
               href="#projects"
               variant="primary"
-              className="w-full bg-[#6C7F93]! text-white hover:bg-[#5E7186]! focus-visible:ring-[#8798A9] active:bg-[#536678]!"
+              className="w-full bg-[#5E7186]! text-white hover:bg-[#536678]! focus-visible:ring-[#8798A9] active:bg-[#45586B]!"
             >
               {t('ctaPrimary')}
               <ArrowRight size={16} aria-hidden="true" />

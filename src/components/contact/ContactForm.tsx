@@ -121,14 +121,19 @@ export function ContactForm() {
             const Icon = PROJECT_TYPE_ICONS[type];
 
             return (
-              <label key={type} className="cursor-pointer">
+              <label key={type} className="relative cursor-pointer">
                 <input
                   type="radio"
                   value={type}
                   className="peer sr-only"
                   {...register('projectType')}
                 />
-                <span className="rounded-chip border-border bg-bg-card text-fg-secondary peer-checked:border-accent peer-checked:bg-accent/5 peer-checked:text-fg peer-focus-visible:ring-accent/30 flex items-center gap-2 border px-4 py-2.5 text-sm font-medium transition-colors duration-200 peer-focus-visible:ring-2">
+                {/* Opacity-only highlight — keeps the selection state off the border/background-color transition (non-composited). */}
+                <span
+                  aria-hidden="true"
+                  className="border-accent bg-accent/5 rounded-chip pointer-events-none absolute inset-0 border-2 opacity-0 transition-opacity duration-200 peer-checked:opacity-100"
+                />
+                <span className="rounded-chip border-border bg-bg-card text-fg-secondary peer-checked:text-fg peer-focus-visible:ring-accent/30 flex items-center gap-2 border px-4 py-2.5 text-sm font-medium peer-focus-visible:ring-2">
                   <Icon size={16} aria-hidden="true" />
                   {t(`form.projectTypes.${type}`)}
                 </span>

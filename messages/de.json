@@ -141,8 +141,9 @@
     "selection": "Auswahl",
     "headline": "Produkte mit echter Substanz",
     "description": "Eigene Produkte und Kundenlösungen – konzipiert, entwickelt und bis in den Betrieb begleitet.",
-    "cta": "Case Study ansehen",
-    "caseStudyPending": "Case Study folgt in Kürze",
+    "cta": "Projekt ansehen",
+    "ctaPending": "Projektseite folgt in Kürze",
+    "tryBotCta": "Bot testen",
     "meta": {
       "role": "Rolle",
       "status": "Status",
@@ -163,13 +164,17 @@
     "roles": {
       "fullstack-product": "Fullstack & Product Development",
       "fullstack-development": "Fullstack Development",
-      "frontend-development": "Frontend Development"
+      "frontend-development": "Frontend Development",
+      "design-to-deploy": "Fullstack Development"
     },
     "descriptions": {
-      "dev2lab": "Eine Plattform für Entwickler und Auftraggeber – von Matching und Jobs bis zu Angeboten – als eigenständiges SaaS-Produkt entwickelt.",
+      "dklab": "Eine Plattform für Entwickler und Auftraggeber – von Matching und Jobs bis zu Angeboten – als eigenständiges SaaS-Produkt entwickelt.",
       "italiano-daily": "Ein Telegram-Bot für tägliches Italienisch-Training mit Lektionen, Quiz, Streaks und KI-gestütztem Fallback.",
       "olidort-bedachungen": "Eine konversionsorientierte Unternehmenswebsite mit Leistungsrechner, Analytics-Tracking und SEO für einen realen Kunden.",
-      "space-burger": "Eine visuell starke Markenwebsite mit eigenen Animationen und vollständig responsivem Frontend."
+      "spacebox-burger": "Eine visuell starke Markenwebsite mit eigenen Animationen – von der Figma-Gestaltung bis zum Live-Deployment."
+    },
+    "previewNotes": {
+      "dklab": "Konzeptioneller Frontend-Einblick"
     }
   },
   "Experience": {
